@@ -1,0 +1,162 @@
+// Reset {{{
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// }}}
+
+$principale: #123456;
+$secondaire: rgb(223, 119, 94);
+html { height: 100%; }
+html { font-size: 62.5%; }
+
+.group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .group {display: inline-block;}
+/* Hides from IE-mac \*/ * html .group {height: 1%;} .group {display: block;} /* End hide from IE-mac */
+
+body {
+  background: $principale;
+  color: #fff;
+  font-size: 160%;
+  line-height: 1.5;
+  padding: 60px;
+  border-top: 4px solid $secondaire;
+  font-family: "Lato";
+}
+
+ul, ol, p {
+  margin: 0 0 0.75em;
+}
+
+ul {
+  margin-left: 20px;
+  li {
+    list-style-type: disc;
+    color: rgba(255,255,255,0.5);
+    span {
+      color: rgba(255,255,255,1);
+    }
+  }
+}
+
+a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255,255,255,0.2);
+  &:hover {
+    color: rgba(255,255,255,0.9);
+  }
+}
+
+h1 {
+  font-size: 220%;
+  font-family: "Hammersmith One";
+  font-weight: normal;
+  -webkit-transition: color 0.2s linear;
+  span {
+    -webkit-transition: color 0.2s linear;
+  }
+  &:hover {
+    color: rgba(255,255,255,0.6);
+    &::before {
+      content: "/ ";
+      color: rgba(255,255,255,1);
+      width: 2em;
+      margin: 0 0 0 -2.1em;
+      display: block;
+      float: left;
+      text-align: right;
+      padding: 0 0.1em 0 0;
+    }
+    span {
+      color: rgba(255,255,255,1);
+    }
+  }
+}
+
+p.subtitle {
+  color: rgba(255,255,255,0.75);
+}
+
+h2 {
+  font-size: 140%;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  margin: 20px 0 0.3em;
+}
+
+#wrap {
+  font-weight: 300;
+  width: 600px;
+  margin: 0 auto;
+}
+
+strong {
+  color: $secondaire;
+  font-weight: 300;
+}
+
+p.small {
+  font-size: 90%;
+  line-height: 1.6;
+}
+
+footer {
+  width: 600px;
+  margin: 60px auto 0 auto;
+  border-top: 1px dotted rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.2);
+  font-size: 85%;
+  padding: 15px 0 0;
+  font-weight: 300;
+}
