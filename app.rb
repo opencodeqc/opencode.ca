@@ -1,3 +1,7 @@
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['foo', 'keyword']
+end
+
 # Routes {{{
 
 get "/" do
