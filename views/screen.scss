@@ -56,8 +56,48 @@ table {
 
 // }}}
 
+// Mixins CSS3 {{{
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin border-radius-all($radius_top_left, $radius_top_right, $radius_bottom_right, $radius_bottom_left) {
+  border-radius: $radius_top_left $radius_top_right $radius_bottom_right $radius_bottom_left;
+  -moz-border-radius: $radius_top_left $radius_top_right $radius_bottom_right $radius_bottom_left;
+  -webkit-border-top-right-radius: $radius_top_left;
+  -webkit-border-bottom-right-radius: $radius_bottom_right;
+  -webkit-border-bottom-left-radius: $radius_bottom_left;
+  -webkit-border-top-left-radius: $radius_top_left;
+}
+
+@mixin gradient($start, $end) {
+  background-color: $start;
+  background-image: -moz-linear-gradient(top, $start, $end);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $start),color-stop(1, $end));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start}', EndColorStr='#{$end}');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start}', EndColorStr='#{$end}')";
+}
+
+@mixin box-shadow($x, $y, $size, $color) {
+  -moz-box-shadow: $x $y $size $color;
+  -webkit-box-shadow: $x $y $size $color;
+  box-shadow: $x $y $size $color;
+}
+
+@mixin transition($data) {
+  transition: $data;
+  -webkit-transition: $data;
+  -moz-transition: $data;
+}
+
+// }}}
+
 $principale: #123456;
 $secondaire: rgb(223, 119, 94);
+
 html { height: 100%; }
 html { font-size: 62.5%; }
 
@@ -149,6 +189,47 @@ strong {
 p.small {
   font-size: 90%;
   line-height: 1.6;
+}
+
+p.register {
+  a {
+    display: block;
+    float: left;
+    @include gradient(#ff711e, #ff5804);
+    border: 2px solid rgba(0,0,0,0.3);
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 12px;
+    font-size: 95%;
+    border-radius: 5px;
+  }
+  span {
+    float: left;
+    padding: 4px 0 0 6px;
+    color: rgba(255,255,255,0.9);
+    font-size: 90%;
+  }
+}
+
+dl {
+  margin: 40px 0 0;
+  dt {
+    font-weight: bold;
+    color: rgba(255,255,255,0.5);
+  }
+  dd {
+    margin: 0 0 1em;
+    blockquote {
+      &:before {
+        content: "—";
+        float: left;
+        font-size: 130%;
+        line-height: 1;
+        margin: 0 0.3em 0 0;
+        color: rgba(255,255,255,0.5);
+      }
+    }
+  }
 }
 
 footer {

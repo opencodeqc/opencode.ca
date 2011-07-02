@@ -5,6 +5,7 @@ end
 # Routes {{{
 
 get "/" do
+  @title = "OpenCode Québec — 28 juillet 2011"
   haml :index
 end
 
@@ -13,6 +14,7 @@ get "/css/screen.css" do
 end
 
 get "/oc" do
+  @title = "OC"
   haml :oc
 end
 
