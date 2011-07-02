@@ -2,6 +2,10 @@ use Rack::Auth::Basic, "Restricted Area" do |username, password|
   [username, password] == ['foo', 'keyword']
 end
 
+after "*" do
+  response.headers["X-LOL"] = "Ceci n’est pas l’easter egg. Mais bel essai!"
+end
+
 # Routes {{{
 
 get "/" do

@@ -109,7 +109,7 @@ body {
   color: #fff;
   font-size: 160%;
   line-height: 1.5;
-  padding: 60px;
+  padding: 60px 40px;
   border-top: 4px solid $secondaire;
   font-family: "Lato";
 }
@@ -140,10 +140,12 @@ a {
 
 h1 {
   font-size: 220%;
-  font-family: "Hammersmith One";
+  font-family: "Hammersmith One", sans-serif;
   font-weight: normal;
+  color: #fff;
   -webkit-transition: color 0.2s linear;
   span {
+    color: rgba(255,255,255,1);
     -webkit-transition: color 0.2s linear;
   }
   &:hover {
@@ -165,25 +167,33 @@ h1 {
 }
 
 p.subtitle {
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.9);
+  small {
+    font-size: 90%;
+    color: rgba(255,255,255,0.5);
+  }
 }
 
 h2 {
   font-size: 140%;
-  font-weight: 600;
+  font-weight: 300;
   color: rgba(255,255,255,0.5);
   margin: 20px 0 0.3em;
+  padding: 0 0 8px;
+  font-family: "Hammersmith One", sans-serif;
 }
 
 #wrap {
   font-weight: 300;
-  width: 600px;
   margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
 }
 
 strong {
   color: $secondaire;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 p.small {
@@ -233,7 +243,6 @@ dl {
 }
 
 footer {
-  width: 600px;
   margin: 60px auto 0 auto;
   border-top: 1px dotted rgba(255,255,255,0.2);
   color: rgba(255,255,255,0.2);
