@@ -1,10 +1,14 @@
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
   [username, password] == ['foo', 'keyword']
-end
+end # if ENV["RACK_ENV"] == "development"
+
+# Filters {{{
 
 after "*" do
-  response.headers["X-LOL"] = "Ceci n’est pas l’easter egg. Mais bel essai!"
+  response.headers["X-LOL"] = "Ceci n’est pas l’easter egg. Mais bel essai quand même!"
 end
+
+# }}}
 
 # Routes {{{
 
