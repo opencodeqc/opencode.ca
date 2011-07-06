@@ -118,13 +118,19 @@ ul, ol, p {
   margin: 0 0 0.75em;
 }
 
-ul {
-  margin-left: 20px;
+ul.talks {
   li {
-    list-style-type: disc;
     color: rgba(255,255,255,0.5);
+    margin: 0 0 6px;
     span {
       color: rgba(255,255,255,1);
+      float: left;
+      padding: 0 0 0 8px;
+    }
+    img {
+      float: left;
+      margin: 5px 0 0;
+      @include border-radius(1px);
     }
   }
 }
@@ -192,8 +198,10 @@ h2 {
 }
 
 strong {
-  color: $secondaire;
   font-weight: 400;
+  &.important {
+    color: $secondaire;
+  }
 }
 
 p.small {
