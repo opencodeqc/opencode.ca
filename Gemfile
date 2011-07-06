@@ -4,7 +4,7 @@ gem "sinatra"
 gem "thin"
 gem "haml"
 gem "sass"
-gem "rack", "1.2.2"
+gem "rack", "1.2.1"
 
 group :development do
   gem "capistrano"
