@@ -43,7 +43,7 @@ end
 
 configure :production do
   set :scss, settings.scss.merge(:style => :compressed)
-  set :haml, settings.haml.merge(:ugly => true)
+  set :haml, settings.haml.merge(:ugly => false)
 end
 
 # }}}
