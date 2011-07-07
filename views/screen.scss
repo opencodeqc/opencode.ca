@@ -188,8 +188,7 @@ h2 {
   font-size: 140%;
   font-weight: 300;
   color: rgba(255,255,255,0.5);
-  margin: 20px 0 0.3em;
-  padding: 0 0 8px;
+  margin: 20px 0 3px;
   font-family: "Hammersmith One", sans-serif;
 }
 
@@ -214,6 +213,7 @@ p.small {
 }
 
 p.register {
+  margin-top: 1.2em;
   a {
     display: block;
     float: left;
