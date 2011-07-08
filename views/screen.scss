@@ -264,4 +264,8 @@ footer {
   font-size: 85%;
   padding: 15px 0 0;
   font-weight: 300;
+  a {
+    color: rgba(255,255,255,0.4);
+    border-bottom: none;
+  }
 }
