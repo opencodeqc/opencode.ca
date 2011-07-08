@@ -1,6 +1,6 @@
-use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  [username, password] == ['foo', 'keyword']
-end # if ENV["RACK_ENV"] == "development"
+#use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  #[username, password] == ['foo', 'keyword']
+#end # if ENV["RACK_ENV"] == "development"
 
 # Filters {{{
 
