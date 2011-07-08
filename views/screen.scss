@@ -136,6 +136,9 @@ ul.talks {
       margin: 5px 0 0;
       @include border-radius(1px);
     }
+    &.note {
+      font-size: 85%;
+    }
   }
 }
 
