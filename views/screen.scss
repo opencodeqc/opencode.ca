@@ -161,6 +161,13 @@ h1 {
     color: rgba(255,255,255,1);
     -webkit-transition: color 0.2s linear;
   }
+  .twitter-follow-button {
+    float: right;
+    margin: 15px 10px 0 0;
+  }
+  iframe {
+    width: 61px !important;
+  }
   &:hover {
     color: rgba(255,255,255,0.6);
     &::before {
