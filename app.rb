@@ -9,7 +9,7 @@ end
 # Routes {{{
 
 get "/" do
-  @title = "OpenCode Québec — 28 juillet 2011"
+  @title = "OpenCode Québec — 29 septembre 2011"
   haml :index
 end
 
