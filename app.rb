@@ -42,7 +42,8 @@ configure do
   set :haml, :format => :html5, :attr_wrapper => '"'
   set :scss, :cache_location => File.join(File.dirname(__FILE__), "tmp/sass-cache")
 
-  set :steps, ["3828", "1995-09-22", "T_PAAMAYIM_NEKUDOTAYIM", "☃", "b2d4e6fc4f19", "2"]
+  set :steps, ["3828", "1995-09-22", "T_PAAMAYIM_NEKUDOTAYIM", "☃",
+    "b2d4e6fc4f19", "2", "memoization", "NaN", "418"]
 end
 
 configure :development do
