@@ -14,6 +14,7 @@ GEM
     eventmachine (0.12.10)
     haml (3.1.2)
     highline (1.6.2)
+    json (1.6.0)
     net-netrc (0.2.2)
       Platform (>= 0.3.0)
     net-scp (1.0.4)
@@ -44,6 +45,7 @@ DEPENDENCIES
   capistrano
   capistrano-ext
   haml
+  json
   net-netrc
   rack (= 1.2.1)
   rake
