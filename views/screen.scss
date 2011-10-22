@@ -122,6 +122,12 @@ hr {
   display: none;
 }
 
+sup {
+  font-size: 75%;
+  vertical-align: super;
+  line-height: 1.1;
+}
+
 ul.talks {
   li {
     color: rgba(255,255,255,0.5);
@@ -130,6 +136,11 @@ ul.talks {
       color: rgba(255,255,255,1);
       float: left;
       padding: 0 0 0 8px;
+      strong {
+        a {
+          color: rgba(255,255,255,1);
+        }
+      }
     }
     img {
       float: left;
@@ -140,6 +151,11 @@ ul.talks {
       font-size: 85%;
     }
   }
+}
+
+.past-talks .talks {
+  font-size: 85%;
+  margin-bottom: 15px;
 }
 
 a {
@@ -200,6 +216,14 @@ h2 {
   color: rgba(255,255,255,0.5);
   margin: 20px 0 3px;
   font-family: "Hammersmith One", sans-serif;
+}
+
+h3 {
+  font-size: 95%;
+  font-weight: 300;
+  color: rgba(255,255,255,0.4);
+  margin: 0 0 5px;
+  font-family: "Lato", sans-serif;
 }
 
 #wrap {
