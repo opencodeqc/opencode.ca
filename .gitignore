@@ -3,3 +3,4 @@
 .local.*
 tmp
 .bundle
+.sass-cache
