@@ -12,7 +12,7 @@ end
 
 get "/" do
   @title = "OpenCode Québec — 1er décembre 2011 à l’Abri.Co"
-  haml :index
+  haml :index, :layout => false
 end
 
 get "/css/screen.css" do
