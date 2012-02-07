@@ -100,6 +100,8 @@ ul.talks li {
     padding: 0 0 0 8px; }
     ul.talks li span strong a {
       color: white; }
+  ul.talks li code {
+    font-size: 90%; }
   ul.talks li img {
     float: left;
     margin: 5px 0 0;
