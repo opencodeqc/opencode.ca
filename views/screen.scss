@@ -109,7 +109,7 @@ body {
   color: #fff;
   font-size: 160%;
   line-height: 1.5;
-  padding: 60px 40px;
+  padding: 50px 40px 60px;
   border-top: 4px solid $secondaire;
   font-family: "Lato";
 }
@@ -120,6 +120,10 @@ ul, ol, p {
 
 hr {
   display: none;
+}
+
+img {
+  border: none;
 }
 
 sup {
@@ -175,33 +179,10 @@ h1 {
   font-family: "Hammersmith One", sans-serif;
   font-weight: normal;
   color: #fff;
-  -webkit-transition: color 0.2s linear;
-  span {
-    color: rgba(255,255,255,1);
-    -webkit-transition: color 0.2s linear;
-  }
-  .twitter-follow-button {
-    float: right;
-    margin: 15px 10px 0 0;
-  }
-  iframe {
-    width: 151px !important;
-  }
-  &:hover {
-    color: rgba(255,255,255,0.6);
-    &::before {
-      content: "/ ";
-      color: rgba(255,255,255,1);
-      width: 2em;
-      margin: 0 0 0 -2.1em;
-      display: block;
-      float: left;
-      text-align: right;
-      padding: 0 0.1em 0 0;
-    }
-    span {
-      color: rgba(255,255,255,1);
-    }
+  margin: 0 0 0 -12px;
+  a {
+    text-decoration: none;
+    border: none;
   }
 }
 
