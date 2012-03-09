@@ -186,6 +186,9 @@ h1 {
     width: 326px;
     height: 85px;
     display: block;
+    text-indent: -9999px;
+    background: url("../img/img-logo.png");
+    @include transition(background 0.2s linear);
     &:hover {
       background: url("../img/img-logo-glow.png");
       img {
