@@ -1,6 +1,6 @@
 desc "Deploy the website"
 task :deploy do # {{{
-  sh "ssh dreamhost 'cd public/opencode.ca && git pull && touch tmp/restart.txt'"
+  sh "ssh dreamhost 'cd public/opencode.ca && git pull && rake build'"
   sh "say -v zarvox 'application deployed.'"
 end # }}}
 
