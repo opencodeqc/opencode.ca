@@ -5,3 +5,4 @@ tmp
 .bundle
 .sass-cache
 .rbenv-*
+_static
