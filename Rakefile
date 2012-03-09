@@ -6,8 +6,9 @@ end # }}}
 
 desc "Build the static HTML file"
 task :build do # {{{
+  sh "rm -fr _static"
   sh "mkdir -p _static/css"
-  sh "bundle exec haml --format html5 views/index.haml _static/index.html"
-  sh "bundle exec sass --scss views/screen.scss _static/css/screen.css"
+  sh "bundle exec haml --format=html5 --double-quote-attributes views/index.haml _static/index.html"
+  sh "bundle exec sass --scss --style=compact views/screen.scss _static/css/screen.css"
   sh "cp -r public/* _static"
 end # }}}
