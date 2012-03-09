@@ -111,7 +111,7 @@ body {
   line-height: 1.5;
   padding: 50px 40px 60px;
   border-top: 4px solid $secondaire;
-  font-family: "Lato";
+  font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
 ul, ol, p {
@@ -179,10 +179,19 @@ h1 {
   font-family: "Hammersmith One", sans-serif;
   font-weight: normal;
   color: #fff;
-  margin: 0 0 0 -12px;
+  margin: 0 0 15px -12px;
   a {
     text-decoration: none;
     border: none;
+    width: 326px;
+    height: 85px;
+    display: block;
+    &:hover {
+      background: url("../img/img-logo-glow.png");
+      img {
+        display: none;
+      }
+    }
   }
 }
 

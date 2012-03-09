@@ -78,7 +78,7 @@ body {
   line-height: 1.5;
   padding: 50px 40px 60px;
   border-top: 4px solid #df775e;
-  font-family: "Lato"; }
+  font-family: "Lato", Helvetica, Arial, sans-serif; }
 
 ul, ol, p {
   margin: 0 0 0.75em; }
@@ -130,10 +130,17 @@ h1 {
   font-family: "Hammersmith One", sans-serif;
   font-weight: normal;
   color: #fff;
-  margin: 0 0 0 -12px; }
+  margin: 0 0 15px -12px; }
   h1 a {
     text-decoration: none;
-    border: none; }
+    border: none;
+    width: 326px;
+    height: 85px;
+    display: block; }
+    h1 a:hover {
+      background: url("../img/img-logo-glow.png"); }
+      h1 a:hover img {
+        display: none; }
 
 p.subtitle {
   color: rgba(255, 255, 255, 0.9); }
