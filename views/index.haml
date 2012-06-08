@@ -14,7 +14,7 @@
       %h1.group
         %a{ :href => "/" }
           OpenCode
-      -#%p.subtitle <small>Prochaine édition :</small> <em></em>
+      %p.subtitle <small>Prochaine édition :</small> <em>mardi le 17 juillet 2012, 18h-23h</em>
       %h2 Le concept
       %p Un OpenCode est un évènement sans prétention, amical et informel qui s’adresse aux développeurs et programmeurs. <strong class="important">Si votre métier ne consiste pas à écrire du code, vous n’y trouverez probablement pas votre compte.</strong> Gens de marketing, de développement des affaires, de SEO, de médias sociaux… cet évènement n’est pas pour vous!
       %p.small La soirée se déroule en trois parties : <em>Présentations</em>, <em>discussion</em> et <em>code</em>. Courtes présentations de 15-20 minutes sur des sujets reliés à la programmation (<em>ie.</em> montrez-nous du code!). Ensuite, discussions thématiques animées par les présentateurs pour approfondir leur sujet. Par la suite, les participants peuvent discuter et échanger lignes de code, concepts et idées jusqu’à tard le soir…
@@ -28,13 +28,43 @@
           %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Adresse courriel", :required => :required }
           %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } M’inscrire
 
-      -#%h2 Les présentations
+      %h2 Les présentations
+      %ul.talks
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/jpbougie", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/jpbougie" }
+                Jean-Philippe Bougie
+            — <small><em>À déterminer</em></small>
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/bechhun", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/bechhun" }
+                Bernard Chhun
+            — AngularJS vs. Backbone.js
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/EtienneLem", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/EtienneLem" }
+                Étienne Lemay
+            — Animations CSS3
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/remi", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/remi" }
+                Rémi Prévost
+            — Her
 
       %h2 L’endroit
       %p L’évènement se tient à l’<a href="http://abri.co/">Abri.Co</a>, au <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a>, à Québec. Wi-fi et électricité fournie. Vous pouvez amener des éléments nécessaires à votre confort (nourriture, breuvages, etc.).
 
-      -#%h2 Inscription
+      %h2 Inscription
       -#%p Lors des autres éditions, un système de <em>billets</em> (gratuits) avait été mis en place dans le but de limiter le nombre de places disponibles. Pour cette édition, nous retirons ce concept et déclarons l’évènement <strong>Bienvenue à tous et à toutes</strong>! Arrivez tôt si vous voulez être certain d’avoir une place.
+      %p Pour nous confirmer votre présence, veuillez vous inscrire sur EventBrite.
 
       %h2#talk-proposal Proposer une présentation
       %p.small Si vous êtes motivés et que vous désirez partager avec la communauté votre expérience avec une technologie, un langage de programmation, une librairie, un logiciel ou autres, vous pouvez vous proposer comme présentateur pour une prochaine édition en communiquant par courriel (voir la section <em>Informations</em>) ou via <a href="https://twitter.com/opencodeqc">Twitter</a>. Pas besoin d’être un expert, simplement d’être passionné!
@@ -48,21 +78,21 @@
         %h3 Quatrième édition (10 mai 2012)
         %ul.talks
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/simonprevost_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/simonprevost", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/simonprevost" }
                   Simon Prévost
               — Redis
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/jeansebtr_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/JeanSebTr", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/JeanSebTr" }
                   Jean-Sébastien Tremblay
               — Amazon EC2
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/amelieturgeon_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/amelieturgeon", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/amelieturgeon" }
@@ -72,21 +102,21 @@
         %h3 Troisième édition (8 mars 2012)
         %ul.talks
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/mgagnon_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/mgagnon", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/mgagnon" }
                   Martin Gagnon
               — Comment écrire du code sans faille dans un langage inconnu
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/ngarneau_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/nGarneau", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/nGarneau" }
                   Nicolas Garneau
               — Cassandra, Hadoop &amp; Pig
           %li.group
-            %img{ :src => "https://si0.twimg.com/profile_images/695970164/leo_small_normal.jpg", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/renaudl", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/renaudl" }
@@ -96,21 +126,21 @@
         %h3 Deuxième édition (1<sup>er</sup> décembre 2011)
         %ul.talks
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/rafbm_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/rafBM", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/rafBM" }
                   Rafaël Blais Masson
               — DOM… avec pas de jQuery!
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/jmlacroix_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/jmlacroix", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/jmlacroix" }
                   Jean-Michel Lacroix
               — Introduction à la programmation fonctionnelle avec Haskell
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/antoineleclair_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/AntoineLeclair", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/AntoineLeclair" }
@@ -127,21 +157,21 @@
         %h3 Première édition (29 septembre 2011)
         %ul.talks
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/charles_demers_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/charles_demers", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/charles_demers" }
                   Charles Demers
               — Javascript OOP
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/garno_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/garno", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/garno" }
                   Samuel Garneau
               — Démonstration Rack Middleware
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/alain_gilbert_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/alain_gilbert", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/alain_gilbert" }
@@ -151,28 +181,28 @@
         %h3 Édition bêta (28 juillet 2011)
         %ul.talks
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/jimmybourassa_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/JimmyBourassa", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/JimmyBourassa" }
                   Jimmy Bourassa
               — Node.js
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/bechhun_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/bechhun", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/bechhun" }
                   Bernard Chhun
               — Django &amp; Buildout
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/frederickdubois_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/frederickdubois", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/frederickdubois" }
                   Frédérick Dubois
               — Amazon SES
           %li.group
-            %img{ :src => "http://img.tweetimag.es/i/remi_m", :width => "16", :height => "16" }
+            %img{ :src => "http://twitter.com/api/users/profile_image/remi", :width => "16", :height => "16" }
             %span
               %strong
                 %a{ :href => "https://twitter.com/remi" }
