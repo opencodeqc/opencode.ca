@@ -14,7 +14,8 @@
       %h1.group
         %a{ :href => "/" }
           OpenCode
-      %p.subtitle <small>Prochaine édition :</small> <em>à déterminer</em> — <a href="#talk-proposal">Proposez une présentation!</a>
+      -#%p.subtitle <small>Prochaine édition :</small> <em>à déterminer</em> — <a href="#talk-proposal">Proposez une présentation!</a>
+      %p.subtitle <small>Prochaine édition :</small> <em>mardi le 11 septembre 2012, 18-23h</em>
       %h2 Le concept
       %p Un OpenCode est un évènement sans prétention, amical et informel qui s’adresse aux développeurs et programmeurs. <strong class="important">Si votre métier ne consiste pas à écrire du code, vous n’y trouverez probablement pas votre compte.</strong> Gens de marketing, de développement des affaires, de SEO, de médias sociaux… cet évènement n’est pas pour vous!
       %p.small La soirée se déroule en trois parties : <em>Présentations</em>, <em>discussion</em> et <em>code</em>. Courtes présentations de 15-20 minutes sur des sujets reliés à la programmation (<em>ie.</em> montrez-nous du code!). Ensuite, discussions thématiques animées par les présentateurs pour approfondir leur sujet. Par la suite, les participants peuvent discuter et échanger lignes de code, concepts et idées jusqu’à tard le soir…
@@ -28,11 +29,42 @@
           %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Adresse courriel", :required => :required }
           %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } M’abonner
 
+      %h2 Les présentations
+      %ul.talks
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/gcauchon", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/gcauchon" }
+                Guillaume Cauchon
+            — Node.js et WebSockets avec Socket.IO
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/Ownatik", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/Ownatik" }
+                François Bernier
+            — <em>Actor-based concurrency</em> et <em>threading</em> avec Celluloid
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/JimmyBourassa", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/JimmyBourassa" }
+                Jimmy Bourrassa
+            — L’informatique expliquée aux tout-petits (<em>titre de travail</em>)
+        %li.group
+          %img{ :src => "http://twitter.com/api/users/profile_image/JP_Sirois", :width => "16", :height => "16" }
+          %span
+            %strong
+              %a{ :href => "https://twitter.com/JP_Sirois" }
+                Jean-Philippe Sirois
+            — Gestion d’environnements avec Chef et Vagrant
+
       %h2 L’endroit
       %p L’évènement se tient à l’<a href="http://abri.co/">Abri.Co</a>, au <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a>, à Québec. Wi-fi et électricité fournie. Vous pouvez amener des éléments nécessaires à votre confort (nourriture, breuvages, etc.).
 
-      -#%h2 Inscription
-      -#%p.signup Pour nous confirmer votre présence, veuillez vous <a href="http://opencodeqc-5.eventbrite.ca">inscrire sur EventBrite</a>.
+      %h2 Inscription
+      %p.signup Pour nous confirmer votre présence, veuillez vous <a href="http://opencodeqc-6.eventbrite.ca">inscrire sur EventBrite</a>.
 
       %h2#talk-proposal Proposer une présentation
       %p.small Si vous êtes motivés et que vous désirez partager avec la communauté votre expérience avec une technologie, un langage de programmation, une librairie, un logiciel ou autres, vous pouvez vous proposer comme présentateur pour une prochaine édition en communiquant par courriel (voir la section <em>Informations</em>) ou via <a href="https://twitter.com/opencodeqc">Twitter</a>. Pas besoin d’être un expert, simplement d’être passionné!
