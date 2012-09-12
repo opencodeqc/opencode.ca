@@ -160,6 +160,18 @@ ul.talks {
         }
       }
     }
+    .url {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      background: url("../img/ico-url.gif") no-repeat 0 0;
+      border: none;
+      margin: 0 0 0 2px;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+    }
     code {
       font-size: 90%;
     }
