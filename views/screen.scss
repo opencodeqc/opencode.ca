@@ -161,13 +161,12 @@ ul.talks {
       }
     }
     .url {
-      width: 10px;
-      height: 10px;
-      display: inline-block;
-      background: url("../img/ico-url.gif") no-repeat 0 0;
+      background: url("../img/ico-url.gif") no-repeat 0 50%;
+      padding: 0 0 0 13px;
       border: none;
-      margin: 0 0 0 2px;
+      margin: 0 0 0 3px;
       opacity: 0.5;
+      font-size: 90%;
       &:hover {
         opacity: 1;
       }
