@@ -148,12 +148,13 @@ sup {
 
 ul.talks {
   li {
+    position: relative;
     color: rgba(255,255,255,0.5);
     margin: 0 0 6px;
     span {
       color: rgba(255,255,255,1);
       float: left;
-      padding: 0 0 0 8px;
+      padding: 0 0 0 24px;
       strong {
         a {
           color: rgba(255,255,255,1);
@@ -175,7 +176,8 @@ ul.talks {
       font-size: 90%;
     }
     img {
-      float: left;
+      position: absolute;
+      top: 0; left: 0;
       margin: 5px 0 0;
       @include border-radius(1px);
     }
