@@ -156,7 +156,9 @@ ul.talks {
       float: left;
       padding: 0 0 0 24px;
       strong {
+        font-weight: 300;
         a {
+          font-weight: normal;
           color: rgba(255,255,255,1);
         }
       }
@@ -179,10 +181,18 @@ ul.talks {
       position: absolute;
       top: 0; left: 0;
       margin: 5px 0 0;
-      @include border-radius(1px);
+      @include border-radius(2px);
     }
     &.note {
       font-size: 85%;
+    }
+    &.tag-team {
+      span {
+        padding-left: 48px;
+      }
+      img:nth-child(2) {
+        left: 24px;
+      }
     }
   }
 }
