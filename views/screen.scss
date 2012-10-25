@@ -109,9 +109,25 @@ body {
   color: #fff;
   font-size: 160%;
   line-height: 1.5;
-  padding: 50px 40px 60px;
   border-top: 4px solid $secondaire;
   font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+#wrap-outer {
+  padding: 50px 40px 60px;
+}
+
+#lang {
+  background: rgba(0,0,0,0.25);
+  text-align: center;
+  padding: 7px 0;
+  font-size: 80%;
+
+  a {
+    font-weight: normal;
+    font-weight: 300;
+    border: none;
+  }
 }
 
 ul, ol, p {
@@ -217,7 +233,6 @@ a {
 
 h1 {
   font-size: 220%;
-  font-family: "Hammersmith One", sans-serif;
   font-weight: normal;
   color: #fff;
   margin: 0 0 15px -12px;
@@ -248,11 +263,15 @@ p.subtitle {
 }
 
 h2 {
-  font-size: 140%;
-  font-weight: 300;
+  font-size: 130%;
+  font-weight: 400;
   color: rgba(255,255,255,0.5);
   margin: 20px 0 3px;
   font-family: "Hammersmith One", sans-serif;
+
+  span {
+  color: rgba(255,255,255,0.3);
+  }
 }
 
 h3 {

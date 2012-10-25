@@ -15,6 +15,10 @@ get "/" do
   haml :index, :layout => false
 end
 
+get "/en" do
+  haml :"index-en", :layout => false
+end
+
 get "/css/screen.css" do
   scss :screen
 end
