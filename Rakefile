@@ -10,7 +10,7 @@ task :build do # {{{
   sh "mkdir -p _static/css"
   sh "mkdir -p _static/en"
   sh "bundle exec haml --format=html5 --double-quote-attributes views/index.haml _static/index.html"
-  sh "bundle exec haml --format=html5 --double-quote-attributes views/index-en.haml _static/en/index-en.html"
+  sh "bundle exec haml --format=html5 --double-quote-attributes views/index-en.haml _static/en/index.html"
   sh "bundle exec sass --scss --style=compressed views/screen.scss _static/css/screen.css"
   sh "cp -r public/* _static"
 end # }}}
