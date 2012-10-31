@@ -41,8 +41,8 @@ configure :production do
   set :scss, settings.scss.merge(:style => :compressed)
   set :haml, settings.haml.merge(:ugly => false)
 
-  use Rack::Static, :urls => ['/stylesheets'], :root => File.expand_path('../tmp', __FILE__)
-  Sass::Plugin.options.merge!(:template_location => 'public/stylesheets/sass', :css_location => 'tmp/stylesheets')
+  use Rack::Static, :urls => ['/css'], :root => File.expand_path('../tmp', __FILE__)
+  Sass::Plugin.options.merge!(:template_location => 'views', :css_location => 'tmp/css')
 end
 
 # }}}
