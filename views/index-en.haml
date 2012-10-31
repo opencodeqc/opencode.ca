@@ -21,8 +21,8 @@
         %h1.group
           %a{ :href => "/en" }
             OpenCode
-        -#%p.subtitle <small>Next edition:</small> <em>to be determined</em>
-        %p.subtitle <small>Next edition:</small> <em>Tuesday October 30, 2012 — 6pm-11pm</em>
+        %p.subtitle <small>Next edition:</small> <em>to be determined</em> — <a href="#talk-proposal">Submit a talk! (in french)</a>
+        -#%p.subtitle <small>Next edition:</small> <em>Tuesday October 30, 2012 — 6pm-11pm</em>
         %h2 The concept
         %p An OpenCode is a free, modest, informal and friendly event made by and for developers and programmers. <strong class="important">If your job doesn’t involve writing code, you probably won’t find anything for you there.</strong> Marketing, business development, SEO, social media people… this event is not for you!
         %p.small The evening is split in two parts: <em>Talks</em> and <em>discussions</em>. Short (15-20 minutes) talks about programming-related topics (<em>ie.</em> show us code!). Then, people gather together to discuss and share code lines, concepts and ideas.
@@ -36,51 +36,53 @@
             %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Email address", :required => :required }
             %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } Subscribe
 
-        %h2 Talks <span>(in french)</span>
-        %ul.talks
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/jmlacroix", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/jmlacroix" }
-                  Jean-Michel Lacroix
-              — <em>Crash Course</em> sur les sockets
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/AntoineLeclair", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/AntoineLeclair" }
-                  Antoine Leclair
-              — AppFog
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/trochette", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/trochette" }
-                  Tommy Rochette
-              — <em>Design patterns</em> avancés avec Angular.js
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/pothibo", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/pothibo" }
-                  Pier-Olivier Thibault
-              — <em>Responsive AJAX</em>
+        -#%h2 Talks <span>(in french)</span>
 
         %h2 Location
         %p Events are held at <a href="https://abri.co/?locale=en">Abri.Co</a>, located at <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a> in Quebec City. Wi-fi and electricity are provided. You can bring anything that makes you more comfortable (food, drinks, etc.).
 
-        %h2 Register
-        %p.signup To confirm that you are attending, please <a href="http://opencodeqc-7.eventbrite.ca">register on EventBrite</a>.
+        -#%h2 Register
+        -#%p.signup To confirm that you are attending, please <a href="http://opencodeqc-7.eventbrite.ca">register on EventBrite</a>.
 
         %h2#talk-proposal Submit a talk <span>(in french)</span>
-        %p.small If you are motivated and you want to share your experience with a technologie, a programming language, a library, a software or something else, you can submit a talk for an upcoming edition by sending an email (see the <em>Information</em> section) or via <a href="https://twitter.com/opencodeqc">Twitter</a>. <strong>No need to be an expert, passion is the key!</strong>
+        %p.small If you are motivated and you want to share your experience with a technology, a programming language, a library, a software or something else, you can submit a talk for an upcoming edition by sending an email (see the <em>Information</em> section) or via <a href="https://twitter.com/opencodeqc">Twitter</a>. <strong>No need to be an expert, passion is the key!</strong>
 
         %h2 Information
         %p.small For more information, you can write to <code>info@opencode.ca</code>. You can also follow us on Twitter as <a href="https://twitter.com/opencodeqc">@opencodeqc</a>.
 
         .past-talks
           %h2 Past editions
+
+          %h3 Seventh edition (October 30 2012)
+          %ul.talks
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/jmlacroix", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/jmlacroix" }
+                    Jean-Michel Lacroix
+                — <em>Crash Course</em> sur les sockets
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/AntoineLeclair", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/AntoineLeclair" }
+                    Antoine Leclair
+                — AppFog
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/trochette", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/trochette" }
+                    Tommy Rochette
+                — <em>Design patterns</em> avancés avec Angular.js
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/pothibo", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/pothibo" }
+                    Pier-Olivier Thibault
+                — <em>Responsive AJAX</em>
 
           %h3 Sixth edition (September 11 2012)
           %ul.talks
