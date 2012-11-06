@@ -1,15 +1,8 @@
 # encoding: utf-8
-require "base64"
-
-# Filters {{{
 
 after "*" do
   response.headers["X-LOL"] = "Ceci n’est pas l’easter egg. Mais bel essai quand même!"
 end
-
-# }}}
-
-# Configuration {{{
 
 configure do
   set :public, File.join(File.dirname(__FILE__), "public")
@@ -29,7 +22,6 @@ configure do
   ]
 end
 
-require 'sass/plugin/rack'
 use Sass::Plugin::Rack
 
 configure :development do
@@ -45,25 +37,16 @@ configure :production do
   Sass::Plugin.options.merge!(:template_location => 'views', :css_location => 'tmp/css')
 end
 
-# }}}
-
-# Routes {{{
-
 get "/" do
-  haml :index, :layout => false
+  haml :index
 end
 
 get "/en" do
-  haml :"index-en", :layout => false
+  haml :"index-en"
 end
 
 get "/css/screen.css" do
   scss :screen
-end
-
-get "/oc" do
-  @title = "OC"
-  haml :oc
 end
 
 get "/foo" do
@@ -84,5 +67,3 @@ get "/foo" do
 
   JSON.dump output
 end
-
-# }}}
