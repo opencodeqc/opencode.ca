@@ -7,14 +7,6 @@ $ bundle install
 $ bundle exec shotgun --port 5005 --host 0.0.0.0
 ```
 
-## Deploy the application
-
-Can you pull it off?
-
-```bash
-$ rake deploy
-```
-
 ## Add URLs to your talk
 
 This is what a talk item looks like, without URLs:
