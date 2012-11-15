@@ -350,27 +350,6 @@ p.register {
   }
 }
 
-dl {
-  margin: 40px 0 0;
-  dt {
-    font-weight: bold;
-    color: rgba(255,255,255,0.5);
-  }
-  dd {
-    margin: 0 0 1em;
-    blockquote {
-      &:before {
-        content: "—";
-        float: left;
-        font-size: 130%;
-        line-height: 1;
-        margin: 0 0.3em 0 0;
-        color: rgba(255,255,255,0.5);
-      }
-    }
-  }
-}
-
 footer {
   margin: 60px auto 0 auto;
   border-top: 1px dotted rgba(255,255,255,0.2);
