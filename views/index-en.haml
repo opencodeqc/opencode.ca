@@ -21,8 +21,8 @@
         %h1.group
           %a{ :href => "/en" }
             OpenCode
-        %p.subtitle <small>Next edition:</small> <em>to be determined</em> — <a href="#talk-proposal">Submit a talk! (in french)</a>
-        -#%p.subtitle <small>Next edition:</small> <em>Tuesday October 30, 2012 — 6pm-11pm</em>
+        -#%p.subtitle <small>Next edition:</small> <em>to be determined</em> — <a href="#talk-proposal">Submit a talk! (in french)</a>
+        %p.subtitle <small>Next edition:</small> <em>Tuesday December 18, 2012 — 6pm-11pm</em>
         %h2 The concept
         %p An OpenCode is a free, modest, informal and friendly event made by and for developers and programmers. <strong class="important">If your job doesn’t involve writing code, you probably won’t find anything for you there.</strong> Marketing, business development, SEO, social media people… this event is not for you!
         %p.small The evening is split in two parts: <em>Talks</em> and <em>discussions</em>. Short (15-20 minutes) talks about programming-related topics (<em>ie.</em> show us code!). Then, people gather together to discuss and share code lines, concepts and ideas.
@@ -36,7 +36,34 @@
             %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Email address", :required => :required }
             %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } Subscribe
 
-        -#%h2 Talks <span>(in french)</span>
+        %h2 Talks <span>(in french)</span>
+        %ul.talks
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/bassuro", :width => "16", :height => "16" }
+            %span
+              %strong
+                %a{ :href => "https://twitter.com/bassuro" }
+                  Sébastien Morin
+              — Le <em>Growth Hacking</em>
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/remi", :width => "16", :height => "16" }
+            %span
+              %strong
+                %a{ :href => "https://twitter.com/remi" }
+                  Remi Prévost
+              — Introduction à RSpec
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/simonprev", :width => "16", :height => "16" }
+            %span
+              %strong
+                %a{ :href => "https://twitter.com/simonprev" }
+                  Simon Prévost
+              — <em>To be determined</em>
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/opencodeqc", :width => "16", :height => "16" }
+            %span
+              %strong
+                <em>Other talk to be confirmed</em>
 
         %h2 Location
         %p Events are held at <a href="https://abri.co/?locale=en">Abri.Co</a>, located at <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a> in Quebec City. Wi-fi and electricity are provided. You can bring anything that makes you more comfortable (food, drinks, etc.).

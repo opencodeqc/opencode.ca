@@ -22,8 +22,8 @@
         %h1.group
           %a{ :href => "/" }
             OpenCode
-        %p.subtitle <small>Prochaine édition :</small> <em>à déterminer</em> — <a href="#talk-proposal">Proposez une présentation!</a>
-        -#%p.subtitle <small>Prochaine édition :</small> <em>mardi le 30 octobre 2012, 18h-23h</em>
+        -#%p.subtitle <small>Prochaine édition :</small> <em>à déterminer</em> — <a href="#talk-proposal">Proposez une présentation!</a>
+        %p.subtitle <small>Prochaine édition :</small> <em>mardi le 18 décembre 2012, 18h-23h</em>
         %h2 Le concept
         %p Un OpenCode est un évènement gratuit, sans prétention, amical et informel qui s’adresse aux développeurs et programmeurs. <strong class="important">Si votre métier ne consiste pas à écrire du code, vous n’y trouverez probablement pas votre compte.</strong> Gens de marketing, de développement des affaires, de SEO, de médias sociaux… cet évènement n’est pas pour vous!
         %p.small La soirée se déroule en deux parties : <em>Présentations</em> et <em>discussions</em>. Courtes présentations de 15-20 minutes sur des sujets reliés à la programmation (<em>ie.</em> montrez-nous du code!). Ensuite, les gens se rassemblent pour discuter et échanger lignes de code, concepts et idées jusqu’à tard le soir…
@@ -37,7 +37,34 @@
             %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Adresse courriel", :required => :required }
             %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } M’abonner
 
-        -#%h2 Les présentations
+        %h2 Les présentations
+        %ul.talks
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/bassuro", :width => "16", :height => "16" }
+            %span
+              %strong
+                %a{ :href => "https://twitter.com/bassuro" }
+                  Sébastien Morin
+              — Le <em>Growth Hacking</em>
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/remi", :width => "16", :height => "16" }
+            %span
+              %strong
+                %a{ :href => "https://twitter.com/remi" }
+                  Remi Prévost
+              — Introduction à RSpec
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/simonprev", :width => "16", :height => "16" }
+            %span
+              %strong
+                %a{ :href => "https://twitter.com/simonprev" }
+                  Simon Prévost
+              — <em>Sujet à déterminer</em>
+          %li.group
+            %img{ :src => "http://twitter.com/api/users/profile_image/opencodeqc", :width => "16", :height => "16" }
+            %span
+              %strong
+                <em>Autre présentation à confirmer</em>
 
         %h2 L’endroit
         %p L’évènement se tient à l’<a href="https://abri.co/">Abri.Co</a>, au <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a>, à Québec. Wi-fi et électricité fournie. Vous pouvez amener des éléments nécessaires à votre confort (nourriture, breuvages, etc.).
