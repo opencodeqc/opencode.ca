@@ -21,8 +21,8 @@
         %h1.group
           %a{ :href => "/en" }
             OpenCode
-        -#%p.subtitle <small>Next edition:</small> <em>to be determined</em> — <a href="#talk-proposal">Submit a talk! (in french)</a>
-        %p.subtitle <small>Next edition:</small> <em>Tuesday December 18, 2012 — 6pm-11pm</em>
+        %p.subtitle <small>Next edition:</small> <em>to be determined</em> — <a href="#talk-proposal">Submit a talk! (in french)</a>
+        -#%p.subtitle <small>Next edition:</small> <em>Tuesday December 18, 2012 — 6pm-11pm</em>
         %h2 The concept
         %p An OpenCode is a free, modest, informal and friendly event made by and for developers and programmers. <strong class="important">If your job doesn’t involve writing code, you probably won’t find anything for you there.</strong> Marketing, business development, SEO, social media people… this event is not for you!
         %p.small The evening is split in two parts: <em>Talks</em> and <em>discussions</em>. Short (15-20 minutes) talks about programming-related topics (<em>ie.</em> show us code!). Then, people gather together to discuss and share code lines, concepts and ideas.
@@ -36,36 +36,7 @@
             %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Email address", :required => :required }
             %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } Subscribe
 
-        %h2 Talks <span>(in french)</span>
-        %ul.talks
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/rafBM", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/rafBM" }
-                  Rafaël Blais-Masson
-              — <em>HTTP Caching</em>
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/remi", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/remi" }
-                  Remi Prévost
-              — Introduction à RSpec
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/simonprev", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/simonprev" }
-                  Simon Prévost
-              — Introduction à Vim
-          %li.group
-            %img{ :src => "http://twitter.com/api/users/profile_image/jeansebtr", :width => "16", :height => "16" }
-            %span
-              %strong
-                %a{ :href => "https://twitter.com/jeansebtr" }
-                  Jean-Sébastien Tremblay
-              — Node.js + Objective C
+        -#%h2 Talks <span>(in french)</span>
 
         %h2 Location
         %p Events are held at <a href="https://abri.co/?locale=en">Abri.Co</a>, located at <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a> in Quebec City. Wi-fi and electricity are provided. You can bring anything that makes you more comfortable (food, drinks, etc.).
@@ -81,6 +52,37 @@
 
         .past-talks
           %h2 Past editions
+
+          %h3#opencode-8 Eigth edition (December 18 2012)
+          %ul.talks
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/rafBM", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/rafBM" }
+                    Rafaël Blais-Masson
+                — <em>HTTP Caching</em>
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/remi", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/remi" }
+                    Remi Prévost
+                — Introduction à RSpec
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/simonprev", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/simonprev" }
+                    Simon Prévost
+                — Introduction à Vim
+            %li.group
+              %img{ :src => "http://twitter.com/api/users/profile_image/jeansebtr", :width => "16", :height => "16" }
+              %span
+                %strong
+                  %a{ :href => "https://twitter.com/jeansebtr" }
+                    Jean-Sébastien Tremblay
+                — Node.js + Objective C
 
           %h3#opencode-7 Seventh edition (October 30 2012)
           %ul.talks
@@ -193,10 +195,10 @@
           %h3#opencode-4 Fourth edition (May 10 2012)
           %ul.talks
             %li.group
-              %img{ :src => "http://twitter.com/api/users/profile_image/simonprevost", :width => "16", :height => "16" }
+              %img{ :src => "http://twitter.com/api/users/profile_image/simonprev", :width => "16", :height => "16" }
               %span
                 %strong
-                  %a{ :href => "https://twitter.com/simonprevost" }
+                  %a{ :href => "https://twitter.com/simonprev" }
                     Simon Prévost
                 — Redis
             %li.group
