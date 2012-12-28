@@ -4,6 +4,12 @@ after "*" do
   response.headers["X-LOL"] = "Ceci n’est pas l’easter egg. Mais bel essai quand même!"
 end
 
+helpers do
+  def assets_version
+    ENV["ASSETS_VERSION"] || Random.rand(0..100000000)
+  end
+end
+
 configure do
   set :public_folder, File.join(File.dirname(__FILE__), "public")
   set :haml, :format => :html5, :attr_wrapper => '"'
@@ -22,6 +28,7 @@ configure do
   ]
 end
 
+require 'sass/plugin/rack'
 use Sass::Plugin::Rack
 
 configure :development do
@@ -45,8 +52,8 @@ get "/en" do
   haml :"index-en"
 end
 
-get "/css/screen.css" do
-  scss :screen
+get "/css/screen-:version.css" do
+  scss :"../assets/screen"
 end
 
 get "/foo" do
