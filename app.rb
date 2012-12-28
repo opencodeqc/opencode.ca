@@ -4,10 +4,8 @@ after "*" do
   response.headers["X-LOL"] = "Ceci n’est pas l’easter egg. Mais bel essai quand même!"
 end
 
-helpers do
-  def assets_version
-    ENV["ASSETS_VERSION"] || Random.rand(0..100000000)
-  end
+def assets_version
+  @assets_version ||= (ENV["ASSETS_VERSION"] || Random.rand(0..100000000))
 end
 
 configure do
@@ -40,7 +38,7 @@ configure :production do
   set :scss, settings.scss.merge(:style => :compressed)
   set :haml, settings.haml.merge(:ugly => false)
 
-  use Rack::Static, :urls => ['/css'], :root => File.expand_path('../tmp', __FILE__)
+  use Rack::Static, :urls => ["/css-#{assets_version}"], :root => File.expand_path('../tmp', __FILE__)
   Sass::Plugin.options.merge!(:template_location => 'assets', :css_location => 'tmp/css')
 end
 
@@ -52,7 +50,7 @@ get "/en" do
   haml :"index-en"
 end
 
-get "/css/screen-:version.css" do
+get "/css-:version/screen.css" do
   scss :"../assets/screen"
 end
 
