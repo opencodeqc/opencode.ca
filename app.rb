@@ -5,7 +5,7 @@ after "*" do
 end
 
 configure do
-  set :public, File.join(File.dirname(__FILE__), "public")
+  set :public_folder, File.join(File.dirname(__FILE__), "public")
   set :haml, :format => :html5, :attr_wrapper => '"'
   set :scss, :cache_location => File.join(File.dirname(__FILE__), "tmp/sass-cache")
 

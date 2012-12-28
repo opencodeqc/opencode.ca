@@ -1,13 +1,13 @@
 source "http://rubygems.org"
 ruby "1.9.3"
 
-gem "rake"
+# Server
+gem "unicorn"
 
+# Web
 gem "sinatra"
-gem "thin"
 gem "haml"
 gem "sass"
-gem "rack", "1.2.1"
 gem "json"
 
 group :development do
@@ -15,4 +15,5 @@ group :development do
   gem "capistrano-ext"
   gem "net-netrc"
   gem "shotgun"
+  gem "thin"
 end
