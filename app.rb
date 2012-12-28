@@ -41,7 +41,7 @@ configure :production do
   set :haml, settings.haml.merge(:ugly => false)
 
   use Rack::Static, :urls => ['/css'], :root => File.expand_path('../tmp', __FILE__)
-  Sass::Plugin.options.merge!(:template_location => 'views', :css_location => 'tmp/css')
+  Sass::Plugin.options.merge!(:template_location => 'assets', :css_location => 'tmp/css')
 end
 
 get "/" do
