@@ -180,7 +180,7 @@ ul.talks {
       }
     }
     .url {
-      background: url("../img/ico-url.gif") no-repeat 0 50%;
+      background: asset-url("ico-url.gif") no-repeat 0 50%;
       padding: 0 0 0 13px;
       border: none;
       margin: 0 0 0 3px;
@@ -243,10 +243,10 @@ h1 {
     height: 85px;
     display: block;
     text-indent: -9999px;
-    background: url("../img/img-logo.png");
+    background: asset-url("img-logo.png");
     @include transition(background 0.2s linear);
     &:hover {
-      background: url("../img/img-logo-glow.png");
+      background: asset-url("img-logo-glow.png");
       img {
         display: none;
       }
