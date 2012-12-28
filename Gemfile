@@ -7,8 +7,13 @@ gem "unicorn"
 # Web
 gem "sinatra"
 gem "haml"
+
+# Assets
 gem "sass"
 gem "json"
+gem "sprockets"
+gem "sprockets-sass"
+gem "sprockets-helpers"
 
 group :development do
   gem "capistrano"

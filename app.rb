@@ -4,15 +4,27 @@ after "*" do
   response.headers["X-LOL"] = "Ceci n’est pas l’easter egg. Mais bel essai quand même!"
 end
 
-def assets_version
-  @assets_version ||= (ENV["ASSETS_VERSION"] || Random.rand(0..100000000))
+helpers do
+  include Sprockets::Helpers
 end
 
 configure do
   set :public_folder, File.join(File.dirname(__FILE__), "public")
   set :haml, :format => :html5, :attr_wrapper => '"'
   set :scss, :cache_location => File.join(File.dirname(__FILE__), "tmp/sass-cache")
+  set :haml, settings.haml.merge(:ugly => true)
+end
 
+get "/" do
+  haml :index
+end
+
+get "/en" do
+  haml :"index-en"
+end
+
+# Easter Egg
+configure do
   set :steps, [
     ["3828", "La somme de tous les nombres entre 1 et 87, inclusivement."],
     ["1995-09-22", "La date (YYYY-MM-DD) de la publication de la spec HTML 2.0."],
@@ -24,34 +36,6 @@ configure do
     ["☃", "Le caractère Unicode U+2603."],
     ["b2d4e6fc4f19", "Le hash du commit de Guido van Rossum dans CPython du 10:33:38 2011 -0700."],
   ]
-end
-
-require 'sass/plugin/rack'
-use Sass::Plugin::Rack
-
-configure :development do
-  set :scss, settings.scss.merge(:style => :expanded)
-  set :haml, settings.haml.merge(:ugly => false)
-end
-
-configure :production do
-  set :scss, settings.scss.merge(:style => :compressed)
-  set :haml, settings.haml.merge(:ugly => false)
-
-  use Rack::Static, :urls => ["/css-#{assets_version}"], :root => File.expand_path('../tmp', __FILE__)
-  Sass::Plugin.options.merge!(:template_location => 'assets', :css_location => 'tmp/css')
-end
-
-get "/" do
-  haml :index
-end
-
-get "/en" do
-  haml :"index-en"
-end
-
-get "/css-:version/screen.css" do
-  scss :"../assets/screen"
 end
 
 get "/foo" do

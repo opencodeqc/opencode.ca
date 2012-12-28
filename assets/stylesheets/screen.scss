@@ -1,0 +1,364 @@
+// Reset {{{
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// }}}
+
+// Mixins CSS3 {{{
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin border-radius-all($radius_top_left, $radius_top_right, $radius_bottom_right, $radius_bottom_left) {
+  border-radius: $radius_top_left $radius_top_right $radius_bottom_right $radius_bottom_left;
+  -moz-border-radius: $radius_top_left $radius_top_right $radius_bottom_right $radius_bottom_left;
+  -webkit-border-top-right-radius: $radius_top_right;
+  -webkit-border-bottom-right-radius: $radius_bottom_right;
+  -webkit-border-bottom-left-radius: $radius_bottom_left;
+  -webkit-border-top-left-radius: $radius_top_left;
+}
+
+@mixin gradient($start, $end) {
+  background-color: $start;
+  background-image: -moz-linear-gradient(top, $start, $end);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $start),color-stop(1, $end));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start}', EndColorStr='#{$end}');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$start}', EndColorStr='#{$end}')";
+}
+
+@mixin box-shadow($x, $y, $size, $color) {
+  -moz-box-shadow: $x $y $size $color;
+  -webkit-box-shadow: $x $y $size $color;
+  box-shadow: $x $y $size $color;
+}
+
+@mixin transition($data) {
+  transition: $data;
+  -webkit-transition: $data;
+  -moz-transition: $data;
+}
+
+// }}}
+
+$principale: #123456;
+$secondaire: rgb(223, 119, 94);
+
+html { height: 100%; }
+html { font-size: 62.5%; }
+
+.group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .group {display: inline-block;}
+/* Hides from IE-mac \*/ * html .group {height: 1%;} .group {display: block;} /* End hide from IE-mac */
+
+body {
+  background: $principale;
+  color: #fff;
+  font-size: 160%;
+  line-height: 1.5;
+  border-top: 4px solid $secondaire;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+#wrap-outer {
+  padding: 50px 40px 60px;
+}
+
+#lang {
+  background: rgba(0,0,0,0.25);
+  text-align: center;
+  padding: 7px 0;
+  font-size: 80%;
+
+  a {
+    font-weight: normal;
+    font-weight: 300;
+    border: none;
+  }
+}
+
+ul, ol, p {
+  margin: 0 0 0.75em;
+}
+
+hr {
+  display: none;
+}
+
+img {
+  border: none;
+}
+
+sup {
+  font-size: 75%;
+  vertical-align: super;
+  line-height: 1.1;
+}
+
+.signup a {
+  background: darken($secondaire, 12%);
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin: 0 2px 0 2px;
+  font-size: 95%;
+  &:hover {
+    background: darken($secondaire, 20%);
+  }
+}
+
+ul.talks {
+  li {
+    position: relative;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 6px;
+    span {
+      color: rgba(255,255,255,1);
+      float: left;
+      padding: 0 0 0 24px;
+      strong {
+        font-weight: 300;
+        a {
+          font-weight: normal;
+          color: rgba(255,255,255,1);
+        }
+      }
+    }
+    .url {
+      background: url("../img/ico-url.gif") no-repeat 0 50%;
+      padding: 0 0 0 13px;
+      border: none;
+      margin: 0 0 0 3px;
+      opacity: 0.5;
+      font-size: 90%;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    code {
+      font-size: 90%;
+    }
+    img {
+      position: absolute;
+      top: 0; left: 0;
+      margin: 5px 0 0;
+      @include border-radius(2px);
+    }
+    &.note {
+      font-size: 85%;
+    }
+    &.tag-team {
+      span {
+        padding-left: 48px;
+      }
+      img:nth-child(2) {
+        left: 24px;
+      }
+    }
+  }
+}
+
+small {
+  font-size: 85%;
+}
+
+.past-talks .talks {
+  font-size: 85%;
+  margin-bottom: 15px;
+}
+
+a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255,255,255,0.2);
+  &:hover {
+    color: rgba(255,255,255,0.9);
+  }
+}
+
+h1 {
+  font-size: 220%;
+  font-weight: normal;
+  color: #fff;
+  margin: 0 0 15px -12px;
+  a {
+    text-decoration: none;
+    border: none;
+    width: 326px;
+    height: 85px;
+    display: block;
+    text-indent: -9999px;
+    background: url("../img/img-logo.png");
+    @include transition(background 0.2s linear);
+    &:hover {
+      background: url("../img/img-logo-glow.png");
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+p.subtitle {
+  color: rgba(255,255,255,0.9);
+  small {
+    font-size: 90%;
+    color: rgba(255,255,255,0.5);
+  }
+}
+
+h2 {
+  font-size: 130%;
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+  margin: 20px 0 3px;
+  font-family: "Hammersmith One", sans-serif;
+
+  span {
+  color: rgba(255,255,255,0.3);
+  }
+}
+
+h3 {
+  font-size: 95%;
+  font-weight: 300;
+  color: rgba(255,255,255,0.4);
+  margin: 0 0 5px;
+  font-family: "Lato", sans-serif;
+}
+
+#wrap {
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
+}
+
+strong {
+  font-weight: 400;
+  &.important {
+    color: $secondaire;
+  }
+}
+
+code {
+  color: rgba(255,255,255,0.5);
+}
+
+p.small {
+  font-size: 90%;
+  line-height: 1.6;
+}
+
+p.register {
+  margin-top: 1.2em;
+  a {
+    display: block;
+    float: left;
+    @include gradient(#ff711e, #ff5804);
+    border: 2px solid rgba(0,0,0,0.3);
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 12px;
+    font-size: 95%;
+    border-radius: 5px;
+  }
+  span {
+    float: left;
+    padding: 4px 0 0 6px;
+    color: rgba(255,255,255,0.9);
+    font-size: 90%;
+  }
+}
+
+#newsletter {
+  input {
+    float: left;
+    padding: 7px 6px 7px 9px;
+    width: 200px;
+    background: #fff;
+    border: none;
+    @include border-radius-all(2px, 0, 0, 2px);
+    margin: 0;
+  }
+  button {
+    float: left;
+    cursor: pointer;
+    @include border-radius-all(0, 2px, 2px, 0);
+    background: darken($principale, 10%);
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    margin: 0;
+  }
+}
+
+footer {
+  margin: 60px auto 0 auto;
+  border-top: 1px dotted rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.2);
+  font-size: 85%;
+  padding: 15px 0 0;
+  font-weight: 300;
+  a {
+    color: rgba(255,255,255,0.4);
+    border-bottom: none;
+  }
+}
