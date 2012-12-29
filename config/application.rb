@@ -1,11 +1,16 @@
 module OpenCode
   class App < Sinatra::Base
+    register Sinatra::R18n
+    register Sinatra::Partial
+    enable :partial_underscores
+
     # Configuration
     configure do
       set :root, -> { File.expand_path("./") }
       set :views, -> { File.join(root, "app/views") }
       set :public_folder, -> { File.join(root, "public") }
       set :haml, :format => :html5, :attr_wrapper => '"', :ugly => true
+      set :default_locale, "fr"
       use Rack::CanonicalHost, ENV['CANONICAL_HOST']
     end
 
@@ -16,7 +21,12 @@ module OpenCode
     helpers { include Sprockets::Helpers }
 
     # Routes
-    get("/") { haml :index }
-    get("/en") { haml :"index-en" }
+    before do
+      future_editions, @past_editions = Edition.all.partition { |e| e.held_at.getutc > Time.now.utc }
+      @future_edition = future_editions.first
+    end
+
+    get(%r{^/$}) { haml :"index-fr" }
+    get(%r{^/(?<locale>en)$}) { haml :"index-en" }
   end
 end

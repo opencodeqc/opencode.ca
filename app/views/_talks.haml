@@ -1,0 +1,13 @@
+%ul.talks
+  - talks.each do |talk|
+    %li.group
+      %img{ :src => talk.author_picture_url, :width => "16", :height => "16" }
+      %span
+        %strong
+          %a{ :href => talk.author_url }= talk.author_name
+        — #{talk.title}
+
+        - if talk.slides_url
+          %a.url{ :href => talk.slides_url } slides
+        - if talk.code_url
+          %a.url{ :href => talk.code_url } code

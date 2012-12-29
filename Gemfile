@@ -6,9 +6,12 @@ gem "unicorn"
 
 # Web
 gem "sinatra"
+gem "sinatra-partial", :require => "sinatra/partial"
+gem "sinatra-r18n", :require => "sinatra/r18n"
 gem "haml"
 gem "json"
 gem "rack-canonical-host"
+gem "yaml_record"
 
 # Assets
 gem "sass"
@@ -22,4 +25,6 @@ group :development do
   gem "net-netrc"
   gem "shotgun"
   gem "thin"
+  gem "pry"
+  gem "rake"
 end
