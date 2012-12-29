@@ -7,11 +7,11 @@ gem "unicorn"
 # Web
 gem "sinatra"
 gem "haml"
+gem "json"
 gem "rack-canonical-host"
 
 # Assets
 gem "sass"
-gem "json"
 gem "sprockets"
 gem "sprockets-sass"
 gem "sprockets-helpers"
