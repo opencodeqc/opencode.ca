@@ -7,6 +7,7 @@ gem "unicorn"
 # Web
 gem "sinatra"
 gem "haml"
+gem "rack-canonical-host"
 
 # Assets
 gem "sass"
