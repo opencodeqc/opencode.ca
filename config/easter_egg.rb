@@ -1,7 +1,8 @@
 # encoding: utf-8
 
 module OpenCode
-  class App
+  class EasterEgg < Sinatra::Base
+    # Configuration
     configure do
       set :steps, [
         ["3828", "La somme de tous les nombres entre 1 et 87, inclusivement."],
@@ -14,9 +15,12 @@ module OpenCode
         ["☃", "Le caractère Unicode U+2603."],
         ["b2d4e6fc4f19", "Le hash du commit de Guido van Rossum dans CPython du 10:33:38 2011 -0700."],
       ]
+
+      use Rack::CanonicalHost, ENV['CANONICAL_HOST']
     end
 
-    get "/foo" do
+    # Routes
+    get "/" do
       @step = 0
       headers "Content-Type" => "application/json; charset=UTF-8"
       settings.steps.each_with_index do |value, index|

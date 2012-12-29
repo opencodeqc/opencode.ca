@@ -1,8 +1,4 @@
-# encoding: utf-8
-
-require "bundler"
-Bundler.require
-require "./app"
+require File.expand_path('../config/boot',  __FILE__)
 
 map "/assets" do
   sprockets = Sprockets::Environment.new.tap do |s|
@@ -19,7 +15,10 @@ map "/assets" do
   run sprockets
 end
 
+map "/foo" do
+  run OpenCode::EasterEgg
+end
+
 map "/" do
   run OpenCode::App
 end
-
