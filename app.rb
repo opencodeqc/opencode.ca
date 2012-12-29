@@ -4,10 +4,10 @@ module OpenCode
   class App < Sinatra::Base
     # Configuration
     configure do
-      set :public_folder, File.join(File.dirname(__FILE__), "public")
-      set :haml, :format => :html5, :attr_wrapper => '"'
-      set :scss, :cache_location => File.join(File.dirname(__FILE__), "tmp/sass-cache")
-      set :haml, settings.haml.merge(:ugly => true)
+      set :root, -> { File.dirname(__FILE__) }
+      set :views, -> { File.join(root, "app/views") }
+      set :public_folder, -> { File.join(root, "public") }
+      set :haml, :format => :html5, :attr_wrapper => '"', :ugly => true
     end
 
     # Helpers
