@@ -3,7 +3,6 @@
 
 $principale: #123456;
 $secondaire: rgb(223, 119, 94);
-$font_hammersmith: "Hammersmith", Georgia, "Times new Roman", Times, serif;
 $font_lato: "Lato", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 
 html { height: 100%; }
@@ -187,10 +186,9 @@ p.subtitle {
 
 h2 {
   font-size: 130%;
-  font-weight: 400;
+  font-weight: 600;
   color: rgba(255,255,255,0.5);
   margin: 20px 0 3px;
-  font-family: $font_hammersmith;
 
   span {
     color: rgba(255,255,255,0.3);
@@ -202,7 +200,6 @@ h3 {
   font-weight: 300;
   color: rgba(255,255,255,0.4);
   margin: 0 0 5px;
-  font-family: $font_lato;
 }
 
 #wrap {
