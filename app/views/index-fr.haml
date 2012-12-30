@@ -16,7 +16,7 @@
           <small>Prochaine édition :</small>
           - if @future_edition
             %strong OpenCode ##{@future_edition.number},
-            %em= l @future_edition.held_at, "%A le %d %B %Y à %H:%M"
+            %em= l @future_edition.held_at, "%A le %-d %B %Y à %H:%M"
           - else
             <em>à déterminer</em> — <a href="#talk-proposal">Proposez une présentation!</a>
 
@@ -55,7 +55,7 @@
 
           - @past_editions.reverse.each do |edition|
             %h3{ :id => "opencode-#{edition.number}" }
-              #{edition.title_fr} (#{l edition.held_at, "%d %B %Y"})
+              #{edition.title_fr} (#{l edition.held_at, "%-d %B %Y"})
             = partial :talks, :locals => { :talks => edition.talks }
 
         %hr
