@@ -2,6 +2,8 @@
 
 module OpenCode
   class EasterEgg < Sinatra::Base
+    helpers Sinatra::JSON
+
     # Configuration
     configure do
       set :steps, [
@@ -22,21 +24,20 @@ module OpenCode
     # Routes
     get "/" do
       @step = 0
-      headers "Content-Type" => "application/json; charset=UTF-8"
       settings.steps.each_with_index do |value, index|
         answer, @clue = value
         break unless request.env["HTTP_X_OPENCODE_#{index+1}"] == answer
         @step = index + 1
       end
 
-      output = {}
       if @step == settings.steps.length
         output = { :message => "Le mot à crier fièrement est « YATTA »." }
       else
         output = { :clue => @clue, :header => "X-opencode-#{@step+1}" }
       end
 
-      JSON.dump output
+      headers "Content-Type" => "application/json; charset=UTF-8"
+      json output
     end
   end
 end

@@ -7,6 +7,7 @@ Bundler.require(:default, ENV['RACK_ENV']) if defined? Bundler
 # it's cleaner to require them here (even if there
 # is currently just one)
 require 'sinatra/content_for'
+require 'sinatra/json'
 
 # Require models
 Dir[File.expand_path('../../app/models/**/*.rb', __FILE__)].each do |file|

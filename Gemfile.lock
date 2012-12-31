@@ -19,7 +19,6 @@ GEM
     haml (3.1.2)
     highline (1.6.2)
     hike (1.2.1)
-    json (1.6.0)
     kgio (2.7.4)
     method_source (0.8.1)
     multi_json (1.5.0)
@@ -96,7 +95,6 @@ DEPENDENCIES
   capistrano
   capistrano-ext
   haml
-  json
   net-netrc
   pry
   rack-canonical-host
