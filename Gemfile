@@ -8,6 +8,7 @@ gem "unicorn"
 gem "sinatra"
 gem "sinatra-partial", :require => "sinatra/partial"
 gem "sinatra-r18n", :require => "sinatra/r18n"
+gem "sinatra-contrib", :require => false # See config/boot.rb for
 gem "haml"
 gem "json"
 gem "rack-canonical-host"

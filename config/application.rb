@@ -2,6 +2,7 @@ module OpenCode
   class App < Sinatra::Base
     register Sinatra::R18n
     register Sinatra::Partial
+    helpers Sinatra::ContentFor
     enable :partial_underscores
 
     # Configuration

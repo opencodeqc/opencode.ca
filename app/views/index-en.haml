@@ -1,62 +1,59 @@
-!!!
-%html
-  %head{ :prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" }
-    = partial :head
-    = partial :analytics
-    %meta{ :name => "og:description", :content => "An OpenCode is a free, modest, informal and friendly event made by and for developers and programmers." }
-  %body
-    %div#lang
-      %a{ :href => "/", :hreflang => "fr" } Voir cette page en français
-    #wrap-outer
-      %section#wrap
-        %h1.group
-          %a{ :href => "/en" } OpenCode
+- content_for :head do
+  %meta{ :name => "og:url", :content => "http://opencode.ca/en" }
+  %meta{ :name => "og:description", :content => "An OpenCode is a free, modest, informal and friendly event made by and for developers and programmers." }
 
-        %p.subtitle
-          <small>Next edition:</small>
-          - if @future_edition
-            %strong OpenCode ##{@future_edition.number},
-            %em= l @future_edition.held_at, "%A %-d %B, %Y — %H:%M"
-          - else
-            <em>to be determined</em> — <a href="#talk-proposal">Submit a talk! (in french)</a>
+%div#lang
+  %a{ :href => "/", :hreflang => "fr" } Voir cette page en français
+#wrap-outer
+  %section#wrap
+    %h1.group
+      %a{ :href => "/en" } OpenCode
 
-        %h2 The concept
-        %p An OpenCode is a free, modest, informal and friendly event made by and for developers and programmers. <strong class="important">If your job doesn’t involve writing code, you probably won’t find anything for you there.</strong> Marketing, business development, SEO, social media people… this event is not for you!
-        %p.small The evening is split in two parts: <em>Talks</em> and <em>discussions</em>. Short (15-20 minutes) talks about programming-related topics (<em>ie.</em> show us code!). Then, people gather together to discuss and share code lines, concepts and ideas.
-        %p.small During the evening, a challenge is given to the audience — an algorithm to write, an easter egg to find, a puzzle to solve, etc. A little friendly competition never hurts!
+    %p.subtitle
+      <small>Next edition:</small>
+      - if @future_edition
+        %strong OpenCode ##{@future_edition.number},
+        %em= l @future_edition.held_at, "%A %-d %B, %Y — %H:%M"
+      - else
+        <em>to be determined</em> — <a href="#talk-proposal">Submit a talk! (in french)</a>
 
-        %h2 Newsletter <span>(in french)</span>
-        %p To receive updates about OpenCode and the next events, subscribe to our newsletter. <small>We will never SPAM you. Ever.</small>
+    %h2 The concept
+    %p An OpenCode is a free, modest, informal and friendly event made by and for developers and programmers. <strong class="important">If your job doesn’t involve writing code, you probably won’t find anything for you there.</strong> Marketing, business development, SEO, social media people… this event is not for you!
+    %p.small The evening is split in two parts: <em>Talks</em> and <em>discussions</em>. Short (15-20 minutes) talks about programming-related topics (<em>ie.</em> show us code!). Then, people gather together to discuss and share code lines, concepts and ideas.
+    %p.small During the evening, a challenge is given to the audience — an algorithm to write, an easter egg to find, a puzzle to solve, etc. A little friendly competition never hurts!
 
-        %form#newsletter{ :action => "http://opencode.us2.list-manage.com/subscribe/post?u=6c1136b6511bbc574dae07c1d&amp;id=bb09df3db6", :method => "post" }
-          %p.group
-            %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Email address", :required => :required }
-            %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } Subscribe
+    %h2 Newsletter <span>(in french)</span>
+    %p To receive updates about OpenCode and the next events, subscribe to our newsletter. <small>We will never SPAM you. Ever.</small>
 
-        - if @future_edition
-          %h2 Talks <span>(in french)</span>
-          = partial :talks, :locals => { :talks => @future_edition.talks }
+    %form#newsletter{ :action => "http://opencode.us2.list-manage.com/subscribe/post?u=6c1136b6511bbc574dae07c1d&amp;id=bb09df3db6", :method => "post" }
+      %p.group
+        %input{ :type => "email", :value => "", :name => "EMAIL", :placeholder => "Email address", :required => :required }
+        %button{ :type => "submit", :value => "Subscribe", :name => "subscribe" } Subscribe
 
-        %h2 Location
-        %p Events are held at <a href="https://abri.co/?locale=en">Abri.Co</a>, located at <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a> in Quebec City. Wi-fi and electricity are provided. You can bring anything that makes you more comfortable (food, drinks, etc.).
+    - if @future_edition
+      %h2 Talks <span>(in french)</span>
+      = partial :talks, :locals => { :talks => @future_edition.talks }
 
-        - if @future_edition
-          %h2 Register
-          %p.signup To confirm that you are attending, please <a href="http://opencodeqc-8.eventbrite.ca">register on EventBrite</a>.
+    %h2 Location
+    %p Events are held at <a href="https://abri.co/?locale=en">Abri.Co</a>, located at <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a> in Quebec City. Wi-fi and electricity are provided. You can bring anything that makes you more comfortable (food, drinks, etc.).
 
-        %h2#talk-proposal Submit a talk <span>(in french)</span>
-        %p.small If you are motivated and you want to share your experience with a technology, a programming language, a library, a software or something else, you can submit a talk for an upcoming edition by sending an email (see the <em>Information</em> section) or via <a href="https://twitter.com/opencodeqc">Twitter</a>. <strong>No need to be an expert, passion is the key!</strong>
+    - if @future_edition
+      %h2 Register
+      %p.signup To confirm that you are attending, please <a href="http://opencodeqc-8.eventbrite.ca">register on EventBrite</a>.
 
-        %h2 Information
-        %p.small For more information, you can write to <code>info@opencode.ca</code>. You can also follow us on Twitter as <a href="https://twitter.com/opencodeqc">@opencodeqc</a>.
+    %h2#talk-proposal Submit a talk <span>(in french)</span>
+    %p.small If you are motivated and you want to share your experience with a technology, a programming language, a library, a software or something else, you can submit a talk for an upcoming edition by sending an email (see the <em>Information</em> section) or via <a href="https://twitter.com/opencodeqc">Twitter</a>. <strong>No need to be an expert, passion is the key!</strong>
 
-        .past-talks
-          %h2 Past editions
-          - @past_editions.reverse.each do |edition|
-            %h3{ :id => "opencode-#{edition.number}" }
-              #{edition.title_en} (#{l edition.held_at, "%-d %B, %Y"})
-            = partial :talks, :locals => { :talks => edition.talks }
+    %h2 Information
+    %p.small For more information, you can write to <code>info@opencode.ca</code>. You can also follow us on Twitter as <a href="https://twitter.com/opencodeqc">@opencodeqc</a>.
 
-        %hr
-        %footer
-          OpenCode is an event organized during the free time of <a href="https://twitter.com/JimmyBourassa">Jimmy Bourassa</a>, <a href="https://twitter.com/frederickdubois">Frédérick Dubois</a>, <a href="https://twitter.com/garno">Samuel Garneau</a> and <a href="https://twitter.com/remi">Rémi Prévost</a>. Its purpose is to help the growth and friendliness of Quebec’s developer community.
+    .past-talks
+      %h2 Past editions
+      - @past_editions.reverse.each do |edition|
+        %h3{ :id => "opencode-#{edition.number}" }
+          #{edition.title_en} (#{l edition.held_at, "%-d %B, %Y"})
+        = partial :talks, :locals => { :talks => edition.talks }
+
+    %hr
+    %footer
+      OpenCode is an event organized during the free time of <a href="https://twitter.com/JimmyBourassa">Jimmy Bourassa</a>, <a href="https://twitter.com/frederickdubois">Frédérick Dubois</a>, <a href="https://twitter.com/garno">Samuel Garneau</a> and <a href="https://twitter.com/remi">Rémi Prévost</a>. Its purpose is to help the growth and friendliness of Quebec’s developer community.
