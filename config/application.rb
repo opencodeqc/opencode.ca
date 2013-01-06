@@ -2,7 +2,6 @@ module OpenCode
   class App < Sinatra::Base
     register Sinatra::R18n
     register Sinatra::Partial
-    helpers Sinatra::ContentFor
     enable :partial_underscores
 
     # Configuration
@@ -19,7 +18,8 @@ module OpenCode
     after("*") { response.headers["X-Easter-Egg"] = "GET /foo" }
 
     # Helpers
-    helpers { include Sprockets::Helpers }
+    helpers Sprockets::Helpers
+    helpers Sinatra::ContentFor
 
     # Routes
     before do
