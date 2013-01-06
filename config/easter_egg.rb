@@ -35,7 +35,6 @@ module OpenCode
         output = { :clue => @clue, :header => "X-OpenCode-#{@step+1}" }
       end
 
-      headers "Content-Type" => "application/json; charset=UTF-8"
       json output
     end
   end
