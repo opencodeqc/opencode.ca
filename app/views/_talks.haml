@@ -4,7 +4,10 @@
       %img{ :src => talk.author_picture_url, :width => "16", :height => "16" }
       %span
         %strong
-          %a{ :href => talk.author_url }= talk.author_name
+          - if talk.author_url
+            %a{ :href => talk.author_url }= talk.author_name
+          - else
+            = talk.author_name
         — #{talk.title}
 
         - if talk.slides_url
