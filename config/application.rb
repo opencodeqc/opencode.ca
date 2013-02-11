@@ -10,7 +10,6 @@ module OpenCode
       set :views, -> { File.join(root, "app/views") }
       set :public_folder, -> { File.join(root, "public") }
       set :haml, :format => :html5, :attr_wrapper => '"', :ugly => true
-      set :default_locale, "fr"
       use Rack::CanonicalHost, ENV['CANONICAL_HOST']
     end
 
