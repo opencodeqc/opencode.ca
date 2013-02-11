@@ -10,6 +10,7 @@ module OpenCode
       set :views, -> { File.join(root, "app/views") }
       set :public_folder, -> { File.join(root, "public") }
       set :haml, :format => :html5, :attr_wrapper => '"', :ugly => true
+      R18n::I18n.default = 'fr'
       use Rack::CanonicalHost, ENV['CANONICAL_HOST']
     end
 
@@ -26,7 +27,7 @@ module OpenCode
       @future_edition = future_editions.first
     end
 
-    get(%r{^/$}) { params[:locale] = "fr"; haml :"index-fr" }
+    get(%r{^/$}) { haml :"index-fr" }
     get(%r{^/(?<locale>en)$}) { haml :"index-en" }
   end
 end
