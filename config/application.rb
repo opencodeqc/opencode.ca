@@ -27,7 +27,7 @@ module OpenCode
       @future_edition = future_editions.first
     end
 
-    get(%r{^/$}) { haml :"index-fr" }
+    get(%r{^/$}) { params[:locale] = "fr"; haml :"index-fr" }
     get(%r{^/(?<locale>en)$}) { haml :"index-en" }
   end
 end
