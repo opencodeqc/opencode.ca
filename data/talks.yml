@@ -264,6 +264,7 @@
 - :title: Introduction à Diazo
   :author_name: Sylvain Bouchard
   :author_screenname: bouchardsyl
+  :code_url: https://github.com/bouchardsyl/opencode-diazo-demo
   :edition_id: !binary |-
     YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
   :id: !binary |-
@@ -271,12 +272,15 @@
 - :title: Visualisateur de graphes en HTML5 et C++
   :author_name: Sébastien Boisvert
   :author_screenname: sebhtml
+  :slides_url: https://github.com/sebhtml/opencode.ca/tree/master/9
   :edition_id: !binary |-
     YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
   :id: !binary |-
     JAMNJCScFhThNGMSH0OVdLTe0HKxtWjlZfmahREd
 - :title: <em>Concept based overloading</em> en C++
   :author_name: Louis Dionne
+  :slides_url: https://docs.google.com/presentation/d/1HpjEz6dJauNoBxMGWzaNuOOoiVwqgISTNWNTwuOo-_8/edit#slide=id.gd8ce43ea_0146
+  :code_url: https://github.com/ldionne/seminars/tree/master/opencode9_concept_overloading
   :edition_id: !binary |-
     YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
   :id: !binary |-
@@ -284,6 +288,7 @@
 - :title: Organisation efficace d’environnement de développement
   :author_name: Jean-Philippe Sirois
   :author_screenname: JP_Sirois
+  :slides_url: https://speakerdeck.com/jpsirois/organisation-efficace-denvironnement-de-developpement
   :edition_id: !binary |-
     YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
   :id: !binary |-
