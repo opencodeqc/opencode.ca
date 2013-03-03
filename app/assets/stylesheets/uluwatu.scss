@@ -136,26 +136,20 @@ footer {
 }
 
 #past {
-  & > ul {
-    width: 100%;
-    overflow: hidden;
-  }
+  font-size: 0;
 
   h2 {
     margin-bottom: 12px;
   }
 
-  & > ul {
-    width: 100%;
-    overflow: hidden;
-  }
-
   & > ul > li {
+    vertical-align: top;
+    font-size: 16px;
     width: 31%;
     margin: 0 3.5% 20px 0;
-    float: left;
+    display: inline-block;
 
-    @include small-device {
+    @include medium-device {
       width: 100%;
     }
 
@@ -184,9 +178,7 @@ footer {
 
     ul {
       li {
-        width: 100%;
-        overflow: hidden;
-        font-size: 90%;
+        font-size: 0;
         margin: 0 0 12px;
 
         &:last-child {
@@ -194,13 +186,17 @@ footer {
         }
 
         img {
-          float: left;
+          display: inline-block;
+          vertical-align: top;
           @include border-radius(3px);
+          margin: 0 -48px 0 0;
         }
 
         .talk-infos {
-          margin: -1px 0 0 48px;
-          display: block;
+          display: inline-block;
+          vertical-align: top;
+          margin: -1px 0 0 58px;
+          font-size: 14px;
 
           strong {
             color: rgba(255,255,255,0.6);

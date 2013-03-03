@@ -33,6 +33,12 @@
   -moz-transition: $data;
 }
 
+@mixin medium-device {
+  @media screen and (max-width: 660px) {
+    @content;
+  }
+}
+
 @mixin small-device {
   @media screen and (max-width: 420px) {
     @content;
