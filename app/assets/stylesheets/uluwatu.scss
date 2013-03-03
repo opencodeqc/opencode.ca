@@ -128,15 +128,36 @@ footer {
 
       li {
         display: inline-block;
+        position: relative;
 
         a {
           display: inline-block;
           border: none;
           padding: 0 0 0 10px;
+
+          &:hover {
+            span {
+              display: block;
+            }
+          }
         }
 
         img {
           @include border-radius(3px);
+        }
+
+        span {
+          display: none;
+          position: absolute;
+          background: rgba(0,0,0,0.8);
+          font-size: 80%;
+          font-weight: 400;
+          padding: 3px 6px;
+          @include border-radius(3px);
+          top: -5px;
+          left: 30px;
+          white-space: nowrap;
+          z-index: 1000;
         }
       }
     }
