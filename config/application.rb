@@ -23,11 +23,14 @@ module OpenCode
 
     # Routes
     before do
-      future_editions, @past_editions = Edition.all.partition { |e| e.held_at.getutc > Time.now.utc }
+      @editions = Edition.all
+      future_editions, @past_editions = @editions.partition { |e| e.held_at.getutc > Time.now.utc }
       @future_edition = future_editions.first
     end
 
-    get(%r{^/$}) { haml :"index-fr" }
-    get(%r{^/(?<locale>en)$}) { haml :"index-en" }
+    get "/" do
+      params[:locale] = 'fr'
+      haml :uluwatu, :layout => false
+    end
   end
 end

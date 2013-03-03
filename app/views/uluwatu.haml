@@ -1,0 +1,71 @@
+!!!
+%html{ :lang => params[:locale] }
+  %head{ :prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" }
+    %meta{ :charset => "UTF-8" }
+    %title OpenCode Québec
+    %link{ :type => "text/css", :rel => "stylesheet", :media => :screen, :href => stylesheet_path("uluwatu") }
+    %link{ :type => "text/css", :rel => "stylesheet", :media => :screen, :href => "http://fonts.googleapis.com/css?family=Lato:light,regular,regularitalic,lightitalic,bold&v1" }
+    %link{ :type => "image/png", :rel => "shortcut icon", :href => image_path("favicon.png") }
+    %meta{ :name => "og:title", :content => "OpenCode" }
+    %meta{ :name => "og:image", :content => "https://secure.gravatar.com/avatar/208eb5b4a3e5b2412de1d6eb5c0d37b3?s=200" }
+    = yield_content :head
+    - if ENV["RACK_ENV"] == "production"
+      :javascript
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24416048-1']);
+        _gaq.push(['_trackPageview']);
+        (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+  %body
+    #wrap
+      %header
+        %h1
+          %a{ :href => "/" }
+            %img{ :src => image_path("img-logo.png"), :alt => "OpenCode" }
+      - if @future_edition
+        %section#next
+          %p
+            %span La <a href="#opencode-#{@future_edition.number}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>
+            %a.register{ :href => "#" } S’inscrire sur EventBrite
+
+      %section#infos
+        %section#concept
+          %h2 Le concept
+          %p Un OpenCode est un évènement gratuit, sans prétention, amical et informel qui s’adresse aux développeurs et programmeurs. <strong class="important">Si votre métier ne consiste pas à écrire du code, vous n’y trouverez probablement pas votre compte.</strong> Gens de marketing, de développement des affaires, de SEO, de médias sociaux… cet évènement n’est pas pour vous!
+          %p.small La soirée se déroule en deux parties : <em>Présentations</em> et <em>discussions</em>. Courtes présentations de 15-20 minutes sur des sujets reliés à la programmation (<em>ie.</em> montrez-nous du code!). Ensuite, les gens se rassemblent pour discuter et échanger lignes de code, concepts et idées jusqu’à tard le soir…
+          %p.small Au cours de la soirée, un défi est également lancé — un algorithme à produire, un easter egg à découvrir, un casse-tête à déchiffrer, etc. Tout pour favoriser une saine compétition dans la communauté!
+
+        %section#misc-infos
+          %h2 L’endroit
+          %p L’évènement se tient à l’<a href="https://abri.co/">Abri.Co</a>, au <a href="http://g.co/maps/unsb">335 Rue Saint-Joseph Est #500</a>, à Québec. Wi-fi et électricité fournie. Vous pouvez amener des éléments nécessaires à votre confort (nourriture, breuvages, etc.).
+
+          %h2#talk-proposal Proposer une présentation
+          %p.small Si vous êtes motivés et que vous désirez partager avec la communauté votre expérience avec une technologie, un langage de programmation, une librairie, un logiciel ou autres, vous pouvez vous proposer comme présentateur pour une prochaine édition en communiquant par courriel (voir la section <em>Informations</em>). <strong>Pas besoin d’être un expert, simplement d’être passionné!</strong>
+
+          %h2 Informations
+          %p.small Pour plus d’informations, vous pouvez écrire à <code>equipe@opencode.ca</code>. Vous pouvez également nous suivre sur Twitter au <a href="https://twitter.com/opencodeqc">@opencodeqc</a>.
+
+      %section#past
+        %h2 Éditions
+        - @editions.reverse.each_slice(3) do |editions|
+          %ul
+            - editions.each do |edition|
+              %li
+                %h3{ :id => "opencode-#{edition.number}" }
+                  #{edition.title_fr} <span>(#{l edition.held_at, "%-d %B %Y"})</span>
+                %ul
+                  - if edition.talks.any?
+                    - edition.talks.each do |talk|
+                      %li
+                        %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
+                        %span.talk-infos
+                          %strong
+                            - if talk.author_url
+                              %a{ :href => talk.author_url }= talk.author_name
+                            - else
+                              = talk.author_name
+                          #{talk.title}
+                  - else
+                    %p.notice La liste des présentations n’est pas encore disponible pour cette édition. Mais faites-nous confiance, ça va être bon!
+      %footer
+        %p OpenCode est un évènement organisé dans les temps libres de <a href="https://twitter.com/JimmyBourassa">Jimmy Bourassa</a>, <a href="https://twitter.com/frederickdubois">Frédérick Dubois</a>, <a href="https://twitter.com/garno">Samuel Garneau</a> et <a href="https://twitter.com/remi">Rémi Prévost</a>, dans le but de permettre à la communauté de développeurs de Québec de s’épanouir.
+        %p We ♥ code.

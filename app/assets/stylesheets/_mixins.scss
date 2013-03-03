@@ -32,3 +32,9 @@
   -webkit-transition: $data;
   -moz-transition: $data;
 }
+
+@mixin small-device {
+  @media screen and (max-width: 420px) {
+    @content;
+  }
+}
