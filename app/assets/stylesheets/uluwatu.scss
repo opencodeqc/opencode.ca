@@ -73,31 +73,71 @@ footer {
 }
 
 #next {
-  text-align: center;
   margin: 0 0 40px 0;
   font-size: 0;
+  text-align: center;
 
-  p {
+  .next-wrapper {
+    text-align: center;
+    font-size: 0;
+    background: rgba(0,0,0,0.4);
     display: inline-block;
+    @include border-radius(5px);
+    padding: 14px 18px 20px;
 
-    span {
+    & > p {
       font-size: 16px;
-      background: rgba(0,0,0,0.4);
-      display: inline-block;
-      @include border-radius-all(5px, 0, 0, 5px);
-      padding: 10px 18px 10px 13px;
+      display: block;
+      margin: 0 0 20px;
+    }
+  }
+
+  a.register {
+    display: inline-block;
+    @include gradient(#ff711e, #ff5804);
+    border: 2px solid rgba(0,0,0,0.3);
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 11px;
+    @include border-radius(5px);
+    font-size: 16px;
+    vertical-align: middle;
+  }
+
+  .talks {
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 45px 0 0;
+
+    p {
+      display: block;
+      margin: 0 0 10px;
+      font-size: 90%;
+
+      a {
+        border: none;
+        color: #fff;
+      }
     }
 
-    a.register {
-      font-size: 16px;
+    ul {
       display: inline-block;
-      @include gradient(#ff711e, #ff5804);
-      border: 2px solid rgba(0,0,0,0.3);
-      color: #fff;
-      font-weight: bold;
-      padding: 8px 11px;
-      @include border-radius(5px);
-      margin: 0 0 0 -5px;
+      vertical-align: middle;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: inline-block;
+          border: none;
+          padding: 0 0 0 10px;
+        }
+
+        img {
+          @include border-radius(3px);
+        }
+      }
     }
   }
 }

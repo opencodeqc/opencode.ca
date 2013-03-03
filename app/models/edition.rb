@@ -7,6 +7,6 @@ class Edition < YamlRecord::Base
 
   # Retreive talks for this edition
   def talks
-    Talk.all.select { |t| t.edition_id == self.id }
+    @talks ||= Talk.all.select { |t| t.edition_id == self.id }
   end
 end
