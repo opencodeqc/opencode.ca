@@ -67,9 +67,9 @@
                             - else
                               = talk.author_name
                             - if talk.slides_url
-                              %a.url{ :href => talk.slides_url, :title => "Présentation" } &middot;
+                              %a.url{ :href => talk.slides_url, :title => "Présentation" } slides
                             - if talk.code_url
-                              %a.url{ :href => talk.code_url, :title => "Code" } &middot;
+                              %a.url{ :href => talk.code_url, :title => "Code" } code
                           #{talk.title}
                   - else
                     %p.notice La liste des présentations n’est pas encore disponible pour cette édition. Mais faites-nous confiance, ça va être bon!
