@@ -21,7 +21,7 @@
       %header
         %h1
           %a{ :href => "/" }
-            %img{ :src => image_path("img-logo.png"), :alt => "OpenCode", :width => 396 }
+            %img{ :src => image_path("img-logo.png"), :alt => "OpenCode" }
       - if @future_edition
         %section#next
           .next-wrapper
@@ -38,7 +38,8 @@
                         %a{ :href => "#opencode-#{@future_edition.number}" }
                           %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
                           %span= talk.title
-              %a.register{ :href => "http://opencodeqc-#{@future_edition.number}.eventbrite.com/" } S’inscrire sur EventBrite
+              .register
+                %a{ :href => "http://opencodeqc-#{@future_edition.number}.eventbrite.com/" } S’inscrire sur EventBrite
 
       %section#infos
         %section#concept

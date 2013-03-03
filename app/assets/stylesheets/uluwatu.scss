@@ -55,6 +55,12 @@ header {
 
   a {
     border: none;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 396px;
+    }
   }
 }
 
@@ -74,7 +80,7 @@ footer {
 }
 
 #next {
-  margin: 0 0 40px 0;
+  margin: 0 0 45px 0;
   font-size: 0;
   text-align: center;
 
@@ -93,23 +99,40 @@ footer {
     }
   }
 
-  a.register {
+  .register {
+    margin: 0 0 0 50%;
     display: inline-block;
-    @include gradient(#ff711e, #ff5804);
-    border: 2px solid rgba(0,0,0,0.3);
-    color: #fff;
-    font-weight: bold;
-    padding: 8px 11px;
-    @include border-radius(5px);
-    font-size: 16px;
-    vertical-align: middle;
+    width: 50%;
+
+    @include medium-device {
+      width: 100%;
+      margin: 0;
+    }
+
+    a {
+      display: inline-block;
+      @include gradient(#ff711e, #ff5804);
+      border: 2px solid rgba(0,0,0,0.3);
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 11px;
+      @include border-radius(5px);
+      font-size: 16px;
+      vertical-align: middle;
+    }
   }
 
   .talks {
     font-size: 16px;
     vertical-align: middle;
     display: inline-block;
-    margin: 0 45px 0 0;
+    width: 50%;
+    margin: 0 -50% 0 0;
+
+    @include medium-device {
+      width: 100%;
+      margin: 0 0 20px;
+    }
 
     p {
       display: block;
@@ -133,13 +156,17 @@ footer {
         a {
           display: inline-block;
           border: none;
-          padding: 0 0 0 10px;
+          padding: 0 10px 0 0;
 
           &:hover {
             span {
               display: block;
             }
           }
+        }
+
+        &:last-child a {
+          padding-right: 0;
         }
 
         img {
@@ -154,8 +181,8 @@ footer {
           font-weight: 400;
           padding: 3px 6px;
           @include border-radius(3px);
-          top: -5px;
-          left: 30px;
+          top: -10px;
+          left: 16px;
           white-space: nowrap;
           z-index: 1000;
         }
