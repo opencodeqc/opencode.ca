@@ -113,6 +113,13 @@ footer {
     }
   }
 
+  &.no-talks-yet {
+    .register {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
   .talks {
     font-size: 16px;
     vertical-align: middle;

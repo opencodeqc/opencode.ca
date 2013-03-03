@@ -23,7 +23,7 @@
           %a{ :href => "/" }
             %img{ :src => image_path("img-logo.png"), :alt => "OpenCode" }
       - if @future_edition
-        %section#next
+        %section#next{ :class => @future_edition.talks.empty? ? "no-talks-yet" : "" }
           %p
             %span La <a href="#opencode-#{@future_edition.number}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>
           - if @future_edition.talks.any?
