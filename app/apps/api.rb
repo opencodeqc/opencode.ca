@@ -19,7 +19,7 @@ module OpenCode
     end
 
     get "/" do
-      json :endpoints => ["/editions", "/editions/:id"]
+      json :endpoints => ["/editions", "/editions/<edition_id>", "/editions/<edition_id>/talks/<talk_id>"]
     end
 
     get "/editions" do
