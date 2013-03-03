@@ -8,6 +8,7 @@ GEM
     eventmachine (0.12.10)
     haml (3.1.2)
     hike (1.2.1)
+    json (1.7.7)
     kgio (2.7.4)
     method_source (0.8.1)
     multi_json (1.5.0)
@@ -67,6 +68,8 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  json
+  multi_json
   pry
   rack-canonical-host
   rake

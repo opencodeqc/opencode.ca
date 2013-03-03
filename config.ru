@@ -20,8 +20,7 @@ map "/foo" do
 end
 
 map "/api" do
-  # Coming soon!
-  # run OpenCode::API
+  run OpenCode::API
 end
 
 map "/" do

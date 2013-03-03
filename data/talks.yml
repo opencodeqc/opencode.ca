@@ -4,30 +4,26 @@
   :author_screenname: rafBM
   :slides_url: https://speakerdeck.com/rafbm/http-caching-basics
   :code_url: https://github.com/rafBM/opencode-httpcaching
-  :edition_id: !binary |-
-    YmYwMzdiMWVmOGUwYWVjNmJjN2NmOWU5ZDdiNDQ1
+  :edition_id: 8
   :id: !binary |-
     MTJiMWRlNTRmOGNhMDMzMjgzNmMyMjhlYmQ0OTBj
 - :title: Introduction à RSpec
   :author_name: Rémi Prévost
   :author_screenname: remi
   :slides_url: https://speakerdeck.com/remi/introduction-a-rspec
-  :edition_id: !binary |-
-    YmYwMzdiMWVmOGUwYWVjNmJjN2NmOWU5ZDdiNDQ1
+  :edition_id: 8
   :id: !binary |-
     Y2MyODc1YzBjYmRkODVmNzFmOWFkZTU4M2Y2OTQ5
 - :title: Introduction à Vim
   :author_name: Simon Prévost
   :author_screenname: simonprev
-  :edition_id: !binary |-
-    YmYwMzdiMWVmOGUwYWVjNmJjN2NmOWU5ZDdiNDQ1
+  :edition_id: 8
   :id: !binary |-
     Yjc0MzM5YjczMTU1OGJiMWM4NjRjMDhiZTQ1MGM2
 - :title: Node.js + Objective C
   :author_name: Jean-Sébastien Tremblay
   :author_screenname: JeanSebTr
-  :edition_id: !binary |-
-    YmYwMzdiMWVmOGUwYWVjNmJjN2NmOWU5ZDdiNDQ1
+  :edition_id: 8
   :id: !binary |-
     MWI1ZTk2ZTAxZTM4YjhjN2U4NDhmZTAwMmEyYTIw
 - :title: <em>Crash Course</em> sur les sockets
@@ -35,8 +31,7 @@
   :author_screenname: jmlacroix
   :slides_url: ! ' https://speakerdeck.com/jmlacroix/crash-course-sur-les-sockets'
   :code_url: https://gist.github.com/3982311
-  :edition_id: !binary |-
-    OGZmMDgyMWIwM2IwOTMwN2VjNzBlNWNjMDBmMzk5
+  :edition_id: 7
   :id: !binary |-
     ZWU4MDQ4ZDg2YzQwYjQzMDUyODA2OTk0YTQwNTZm
 - :title: AppFog
@@ -44,16 +39,14 @@
   :author_screenname: AntoineLeclair
   :slides_url: http://www.rvl.io/antoineleclair/appfog_opencode_20121030
   :code_url: https://github.com/antoineleclair/OpenCode20121030
-  :edition_id: !binary |-
-    OGZmMDgyMWIwM2IwOTMwN2VjNzBlNWNjMDBmMzk5
+  :edition_id: 7
   :id: !binary |-
     NDBjYjVmZmIzMDZiZTA2MGI1NTgwN2Y4MDY5NWMw
 - :title: <em>Design patterns</em> avancés avec Angular.js
   :author_name: Tommy Rochette
   :author_screenname: trochette
   :slides_url: http://trochette.github.com/Angular-Design-Patterns-Best-Practices
-  :edition_id: !binary |-
-    OGZmMDgyMWIwM2IwOTMwN2VjNzBlNWNjMDBmMzk5
+  :edition_id: 7
   :id: !binary |-
     YTE2ODBhNjkzZDhiZmUwN2JlMzc2MTdhZWRkMGRk
 - :title: <em>Responsive AJAX</em>
@@ -61,22 +54,19 @@
   :author_screenname: pothibo
   :slides_url: http://pothibo.github.com/open-code-ajax
   :code_url: https://github.com/pothibo/open-code-ajax
-  :edition_id: !binary |-
-    OGZmMDgyMWIwM2IwOTMwN2VjNzBlNWNjMDBmMzk5
+  :edition_id: 7
   :id: !binary |-
     MzIwZGE2MWY0MDk5YzdlOTllOWEwNjA5NWEzNjZm
 - :title: <em>Actor-based concurrency</em> et <em>multithreading</em> avec Celluloid
   :author_name: François Bernier
   :author_screenname: f_bernier
-  :edition_id: !binary |-
-    NDJiODA4ZWY2ODk0ZWM1YWVjMmNhMjAxNDVhZDJk
+  :edition_id: 6
   :id: !binary |-
     ZmQ2YTM1NjNlOTU1YWNhM2M0YzNhNDE4MWFjZTNk
 - :title: <em>Computer Science 101</em> pour web geeks
   :author_name: Jimmy Bourassa
   :author_screenname: JimmyBourassa
-  :edition_id: !binary |-
-    NDJiODA4ZWY2ODk0ZWM1YWVjMmNhMjAxNDVhZDJk
+  :edition_id: 6
   :id: !binary |-
     Njg5OGVjYTY0NzE2NjhlNTg3ZTFlZmYwY2RiMDYw
 - :title: <em>Node.js realtime</em> avec Socket.IO
@@ -84,40 +74,35 @@
   :author_screenname: gcauchon
   :slides_url: http://prezi.com/xw1f1sd_xvi4/opencode6-node-socketio-realtime
   :code_url: https://github.com/gcauchon/watcher
-  :edition_id: !binary |-
-    NDJiODA4ZWY2ODk0ZWM1YWVjMmNhMjAxNDVhZDJk
+  :edition_id: 6
   :id: !binary |-
     NTA2MDU3MDQwZDFmMDY2Nzg1NTMzYTE3MGY1MjRl
 - :title: Gestion d’environnements avec Chef et Vagrant
   :author_name: Jean-Philippe Sirois
   :author_screenname: JP_Sirois
   :slides_url: https://speakerdeck.com/u/jpsirois/p/gestion-denvironnement-avec-chef-et-vagrant
-  :edition_id: !binary |-
-    NDJiODA4ZWY2ODk0ZWM1YWVjMmNhMjAxNDVhZDJk
+  :edition_id: 6
   :id: !binary |-
     NTMxZTlhYzE2YWU4YWNlMDc0NDU4MTUwNTkzZTEz
 - :title: D3.js
   :author_name: Jean-Philippe Bougie
   :author_screenname: jpbougie
   :code_url: https://github.com/jpbougie/node-ocd3
-  :edition_id: !binary |-
-    ODhjYzE1ZGMwN2Q4YThiNGEwYWE4OGQ2MWM1NmFh
+  :edition_id: 5
   :id: !binary |-
     Njk1MGFhMDM4NDBmOThhMTk4YWZhMWJlYjdjZTM4
 - :title: jQuery vs Backbone.js vs AngularJS
   :author_name: Bernard Chhun
   :author_screenname: bechhun
   :code_url: https://github.com/bchhun/opencodeqc-angularjs
-  :edition_id: !binary |-
-    ODhjYzE1ZGMwN2Q4YThiNGEwYWE4OGQ2MWM1NmFh
+  :edition_id: 5
   :id: !binary |-
     YWRmMWI1ZjhmZDZmMzhhYjQ1MmRhZWIzZjcwNTAw
 - :title: Animations CSS3
   :author_name: Étienne Lemay
   :author_screenname: EtienneLem
   :code_url: https://github.com/EtienneLem/opencode-css-animations
-  :edition_id: !binary |-
-    ODhjYzE1ZGMwN2Q4YThiNGEwYWE4OGQ2MWM1NmFh
+  :edition_id: 5
   :id: !binary |-
     MGFmZGRmZjhmOGQ0ZDU4NGFjNzgzYzE5YWVlNDg0
 - :title: Her
@@ -125,168 +110,146 @@
   :author_screenname: remi
   :slides_url: https://speakerdeck.com/u/remi/p/her
   :code_url: https://github.com/remiprev/opencode-her
-  :edition_id: !binary |-
-    ODhjYzE1ZGMwN2Q4YThiNGEwYWE4OGQ2MWM1NmFh
+  :edition_id: 5
   :id: !binary |-
     ODJmM2ViOTBmNWNiNThhYzU4NjJkZThlNmNiNzJk
 - :title: Redis
   :author_name: Simon Prévost
   :author_screenname: simonprev
-  :edition_id: !binary |-
-    NGNiYzlhMmU0MTI5Nzk2MWExN2U0OWY4ZWNhNWIx
+  :edition_id: 4
   :id: !binary |-
     ZGJhNDYyNjc0NzhkYTQ3NjZkN2I0MGFjZDdlNmZi
 - :title: Amazon EC2
   :author_name: Jean-Sébastien Tremblay
   :author_screenname: JeanSebTr
   :code_url: https://github.com/JeanSebTr/opencode-ec2
-  :edition_id: !binary |-
-    NGNiYzlhMmU0MTI5Nzk2MWExN2U0OWY4ZWNhNWIx
+  :edition_id: 4
   :id: !binary |-
     YWE3Y2UxZWMyNmZkYWMxNTFmYmI0MmMxMmE1MzFl
 - :title: Les graphes
   :author_name: Amélie Turgeon
   :author_screenname: amelieturgeon
-  :edition_id: !binary |-
-    NGNiYzlhMmU0MTI5Nzk2MWExN2U0OWY4ZWNhNWIx
+  :edition_id: 4
   :id: !binary |-
     Y2IzZjY0OTE2MDUzMDhmOTU1MGJmYmI5MmNmYTlk
 - :title: Comment écrire du code sans faille dans un langage inconnu
   :author_name: Martin Gagnon
   :author_screenname: mgagnon
-  :edition_id: !binary |-
-    OTEzNWFiYjVkNGVkMWJjMmViYzg5YWUwZDM3YWIw
+  :edition_id: 3
   :id: !binary |-
     YzliOWU0MTA5YTlhODQ2YzgwOTY3YWFhYjVlM2Vl
 - :title: Cassandra, Hadoop &amp; Pig
   :author_name: Nicolas Garneau
   :author_screenname: ngarneau
   :code_url: https://github.com/ngarneau/opencode
-  :edition_id: !binary |-
-    OTEzNWFiYjVkNGVkMWJjMmViYzg5YWUwZDM3YWIw
+  :edition_id: 3
   :id: !binary |-
     MzE0Mjg0ODkxZTg3ZDZmNTRkM2Y2YmEwODMxZWE4
 - :title: Browser’s File Reader API
   :author_name: Léo Renaud-Allaire
   :author_screenname: renaudl
   :code_url: https://github.com/renaudleo/file_api_demos
-  :edition_id: !binary |-
-    OTEzNWFiYjVkNGVkMWJjMmViYzg5YWUwZDM3YWIw
+  :edition_id: 3
   :id: !binary |-
     MmVmYmRkNDA0ZmJmMTU3NDA2ZjI4Y2NhOGJiYjNh
 - :title: DOM… avec pas de jQuery!
   :author_name: Rafaël Blais Masson
   :author_screenname: rafBM
   :code_url: https://github.com/rafBM/diy-dom-library
-  :edition_id: !binary |-
-    YjdkNmNkZWYwYWY2MjM2OTg1NDE3ODdjYmJmZGJi
+  :edition_id: 2
   :id: !binary |-
     Yzk5ZGI5YjhiYmFhM2M3NTdhNzVmZjU0M2E4YTA2
 - :title: Introduction à la programmation fonctionnelle avec Haskell
   :author_name: Jean-Michel Lacroix
   :author_screenname: jmlacroix
   :code_url: https://gist.github.com/1425499
-  :edition_id: !binary |-
-    YjdkNmNkZWYwYWY2MjM2OTg1NDE3ODdjYmJmZGJi
+  :edition_id: 2
   :id: !binary |-
     ZTBhOWMwODRlN2VmYjc2OGEzNDcwNTVmNDExMGY2
 - :title: Les tests
   :author_name: Antoine Leclair
   :author_screenname: AntoineLeclair
   :code_url: https://github.com/antoineleclair/OpenCode20111201
-  :edition_id: !binary |-
-    YjdkNmNkZWYwYWY2MjM2OTg1NDE3ODdjYmJmZGJi
+  :edition_id: 2
   :id: !binary |-
     M2Y1ZTllMzU1NmEyODg5YzUwMTE0ZjEwMGUyNDE0
 - :title: PiCloud
   :author_name: Greg Sadetsky
-  :edition_id: !binary |-
-    YjdkNmNkZWYwYWY2MjM2OTg1NDE3ODdjYmJmZGJi
+  :edition_id: 2
   :id: !binary |-
     YWM2YzYyNzY2NmI3MzQ2YmRiNDJjZmRmNGRiOGM1
 - :title: Javascript OOP
   :author_name: Charles Demers
   :author_screenname: charles_demers
   :slides_url: https://github.com/charlesdemers/opencode-slides
-  :edition_id: !binary |-
-    ZTU4MzM5YzU2YzRkZTczMmFkN2M0MDlmMzdiNDA3
+  :edition_id: 1
   :id: !binary |-
     MDZmZDM2ZTdjZWU2ODk1ZmU4YmJjOTQxNDcwOWQ0
 - :title: Démonstration <em>Rack Middleware</em>
   :author_name: Samuel Garneau
   :author_screenname: garno
-  :edition_id: !binary |-
-    ZTU4MzM5YzU2YzRkZTczMmFkN2M0MDlmMzdiNDA3
+  :edition_id: 1
   :id: !binary |-
     NTNmMWE5NzM4NjU1MzEyMzM4NDMwZTI4YWM1ODI1
 - :title: ! 'HTML5 : Canvas API &amp; animations'
   :author_name: Alain Gilbert
   :author_screenname: alain_gilbert
   :code_url: https://github.com/alaingilbert/presentation-html5
-  :edition_id: !binary |-
-    ZTU4MzM5YzU2YzRkZTczMmFkN2M0MDlmMzdiNDA3
+  :edition_id: 1
   :id: !binary |-
     M2Q2MWFkZjY1OTNkNTcyZDlhYTMyNzE5MzliNDc1
 - :title: Node.js
   :author_name: Jimmy Bourassa
   :author_screenname: JimmyBourassa
   :code_url: https://github.com/jbourassa/opencode-node-demo
-  :edition_id: !binary |-
-    NDIzMmE4YzBjMWE5ZDBlMGVhM2UwODJiYmRkNzgx
+  :edition_id: 0
   :id: !binary |-
     MzEyMzdmNjQ3YmNhNDI4YzY3YzFiODJlZTA2OThk
 - :title: Django &amp; Buildout
   :author_name: Bernard Chhun
   :author_screenname: bechhun
   :code_url: https://github.com/bchhun/opencode-talk
-  :edition_id: !binary |-
-    NDIzMmE4YzBjMWE5ZDBlMGVhM2UwODJiYmRkNzgx
+  :edition_id: 0
   :id: !binary |-
     YTZhZjliNTJiMGJhOTc2NTk0Mjg5NDcyMWZhNWU5
 - :title: Amazon SES
   :author_name: Frédérick Dubois
   :author_screenname: frederickdubois
-  :edition_id: !binary |-
-    NDIzMmE4YzBjMWE5ZDBlMGVhM2UwODJiYmRkNzgx
+  :edition_id: 0
   :id: !binary |-
     MDZhNWVkZmFhNTBkYmZkN2Y1YmY2NjJlZjQyZTBl
 - :title: Haml &amp; Sass
   :author_name: Rémi Prévost
   :author_screenname: remi
   :slides_url: https://speakerdeck.com/u/remi/p/haml-sass-en-10-minutes-faciles
-  :edition_id: !binary |-
-    NDIzMmE4YzBjMWE5ZDBlMGVhM2UwODJiYmRkNzgx
+  :edition_id: 0
   :id: !binary |-
     MDJkNzNiMGVlMGY3MWQ4NTI4MGMwODc0M2QwOWM3
 - :title: Introduction à Diazo
   :author_name: Sylvain Bouchard
   :author_screenname: bouchardsyl
   :code_url: https://github.com/bouchardsyl/opencode-diazo-demo
-  :edition_id: !binary |-
-    YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
+  :edition_id: 9
   :id: !binary |-
     Yzc1ODUzZTZiOWIxNTIxMjczOTNlNTViNmNkYjlj
 - :title: Visualisateur de graphes en HTML5 et C++
   :author_name: Sébastien Boisvert
   :author_screenname: sebhtml
   :slides_url: https://github.com/sebhtml/opencode.ca/tree/master/9
-  :edition_id: !binary |-
-    YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
+  :edition_id: 9
   :id: !binary |-
-    JAMNJCScFhThNGMSH0OVdLTe0HKxtWjlZfmahREd
+    ZDdkOGVlOGVjNTlkMzE4NTRiNTFkOWM1ZTg4M2E4
 - :title: <em>Concept based overloading</em> en C++
   :author_name: Louis Dionne
   :slides_url: https://docs.google.com/presentation/d/1HpjEz6dJauNoBxMGWzaNuOOoiVwqgISTNWNTwuOo-_8/edit#slide=id.gd8ce43ea_0146
   :code_url: https://github.com/ldionne/seminars/tree/master/opencode9_concept_overloading
-  :edition_id: !binary |-
-    YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
+  :edition_id: 9
   :id: !binary |-
     NWZiNWY5MThjZTMxNTE1ZDFmNDJlMGM4ZDE5MTZi
 - :title: Organisation efficace d’environnement de développement
   :author_name: Jean-Philippe Sirois
   :author_screenname: JP_Sirois
   :slides_url: https://speakerdeck.com/jpsirois/organisation-efficace-denvironnement-de-developpement
-  :edition_id: !binary |-
-    YTAzNTdhZDM0YzA3NTc5ZjdiYTBiNzZmYzQ0MGYz
+  :edition_id: 9
   :id: !binary |-
     YWU4MGJlMDdjZDk3MjgwMjdjNmQxMDVjY2RmM2Qx

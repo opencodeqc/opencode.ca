@@ -17,5 +17,6 @@ end
 
 # Application setup
 ENV['CANONICAL_HOST'] ||= ENV['RACK_ENV'] == 'development' ? '0.0.0.0' : 'opencode.ca'
-require File.expand_path('../application',  __FILE__)
-require File.expand_path('../easter_egg',  __FILE__)
+require File.expand_path('../../app/apps/application',  __FILE__)
+require File.expand_path('../../app/apps/api',  __FILE__)
+require File.expand_path('../../app/apps/easter_egg',  __FILE__)

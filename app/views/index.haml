@@ -25,19 +25,19 @@
       - if @future_edition
         %section#next{ :class => @future_edition.talks.empty? ? "no-talks-yet" : "" }
           %p
-            %span La <a href="#opencode-#{@future_edition.number}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>.
+            %span La <a href="#opencode-#{@future_edition.id}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>.
           - if @future_edition.talks.any?
             .talks
               %p
-                %a{ :href => "#opencode-#{@future_edition.number}" } Des présentations par :
+                %a{ :href => "#opencode-#{@future_edition.id}" } Des présentations par :
               %ul
                 - @future_edition.talks.each do |talk|
                   %li
-                    %a{ :href => "#opencode-#{@future_edition.number}" }
+                    %a{ :href => "#opencode-#{@future_edition.id}" }
                       %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
                       %span= talk.title
           .register
-            %a{ :href => "http://opencodeqc-#{@future_edition.number}.eventbrite.com/" } S’inscrire sur EventBrite
+            %a{ :href => "http://opencodeqc-#{@future_edition.id}.eventbrite.com/" } S’inscrire sur EventBrite
 
       %section#infos
         %section#concept
@@ -62,7 +62,7 @@
           %ul
             - editions.each do |edition|
               %li
-                %h3{ :id => "opencode-#{edition.number}" }
+                %h3{ :id => "opencode-#{edition.id}" }
                   #{edition.title_fr} <span>(#{l edition.held_at, "%-d %B %Y"})</span>
                 %ul
                   - if edition.talks.any?

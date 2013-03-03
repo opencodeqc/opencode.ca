@@ -12,6 +12,8 @@ gem "sinatra-reloader"
 gem "rack-canonical-host"
 gem "yaml_record"
 gem "haml"
+gem "json"
+gem "multi_json"
 
 # Assets
 gem "sass"

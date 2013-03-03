@@ -7,7 +7,7 @@ class Talk < YamlRecord::Base
   # Properties
   properties :title, :author_name, :author_screenname, :slides_url, :code_url, :edition_id
 
-  # Custom methods
+  # Return the author picture URL, if present
   def author_picture_url
     @author_picture_url ||= begin
       if self.author_screenname
@@ -18,9 +18,15 @@ class Talk < YamlRecord::Base
     end
   end
 
+  # Return the author URL, if present
   def author_url
     @author_url ||= begin
       "http://twitter.com/#{self.author_screenname}" if self.author_screenname
     end
+  end
+
+  # Return the object as a Hash
+  def as_json
+    attributes
   end
 end
