@@ -20,9 +20,6 @@ gem "sprockets-sass"
 gem "sprockets-helpers"
 
 group :development do
-  gem "capistrano"
-  gem "capistrano-ext"
-  gem "net-netrc"
   gem "pry"
   gem "rake"
 end
