@@ -1,7 +1,6 @@
 module OpenCode
   class App < Sinatra::Base
     register Sinatra::R18n
-    register Sinatra::Reloader
 
     # Configuration
     configure do
@@ -10,6 +9,10 @@ module OpenCode
       set :public_folder, -> { File.join(root, "public") }
       set :haml, :format => :html5, :attr_wrapper => '"', :ugly => true
       use Rack::CanonicalHost, ENV['CANONICAL_HOST']
+    end
+
+    configure :development do
+      register Sinatra::Reloader
     end
 
     # Filters (Easter Egg hint)
