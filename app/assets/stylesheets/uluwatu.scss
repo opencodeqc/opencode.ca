@@ -45,11 +45,11 @@ h2 {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 header {
   padding: 50px 0 40px;
-  text-align: center;
   text-transform: uppercase;
   font-size: 150%;
 
@@ -68,7 +68,6 @@ footer {
   color: rgba(255,255,255,0.5);
   font-size: 85%;
   padding: 30px 0 40px;
-  text-align: center;
 
   p {
     display: inline-block;
@@ -80,23 +79,20 @@ footer {
 }
 
 #next {
+  display: inline-block;
   margin: 0 0 45px 0;
   font-size: 0;
-  text-align: center;
+  background: rgba(0,0,0,0.4);
+  @include border-radius(5px);
+  padding: 14px 18px 20px;
+
+  & > p {
+    font-size: 16px;
+    display: block;
+    margin: 0 0 20px;
+  }
 
   .next-wrapper {
-    text-align: center;
-    font-size: 0;
-    background: rgba(0,0,0,0.4);
-    display: inline-block;
-    @include border-radius(5px);
-    padding: 14px 18px 20px;
-
-    & > p {
-      font-size: 16px;
-      display: block;
-      margin: 0 0 20px;
-    }
   }
 
   .register {
@@ -104,18 +100,13 @@ footer {
     display: inline-block;
     width: 50%;
 
-    @include medium-device {
-      width: 100%;
-      margin: 0;
-    }
-
     a {
       display: inline-block;
       @include gradient(#ff711e, #ff5804);
       border: 2px solid rgba(0,0,0,0.3);
       color: #fff;
       font-weight: bold;
-      padding: 8px 11px;
+      padding: 8px 13px;
       @include border-radius(5px);
       font-size: 16px;
       vertical-align: middle;
@@ -128,11 +119,6 @@ footer {
     display: inline-block;
     width: 50%;
     margin: 0 -50% 0 0;
-
-    @include medium-device {
-      width: 100%;
-      margin: 0 0 20px;
-    }
 
     p {
       display: block;
@@ -195,6 +181,7 @@ footer {
   vertical-align: top;
   margin: 0 0 20px;
   font-size: 0;
+  text-align: left;
 
   #concept {
     vertical-align: top;
@@ -227,6 +214,7 @@ footer {
 
 #past {
   font-size: 0;
+  text-align: left;
 
   h2 {
     font-size: 19px;

@@ -24,22 +24,20 @@
             %img{ :src => image_path("img-logo.png"), :alt => "OpenCode" }
       - if @future_edition
         %section#next
-          .next-wrapper
-            %p
-              %span La <a href="#opencode-#{@future_edition.number}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>
-            .talks-row
-              - if @future_edition.talks.any?
-                .talks
-                  %p
-                    %a{ :href => "#opencode-#{@future_edition.number}" } Des présentations par :
-                  %ul
-                    - @future_edition.talks.each do |talk|
-                      %li
-                        %a{ :href => "#opencode-#{@future_edition.number}" }
-                          %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
-                          %span= talk.title
-              .register
-                %a{ :href => "http://opencodeqc-#{@future_edition.number}.eventbrite.com/" } S’inscrire sur EventBrite
+          %p
+            %span La <a href="#opencode-#{@future_edition.number}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>
+          - if @future_edition.talks.any?
+            .talks
+              %p
+                %a{ :href => "#opencode-#{@future_edition.number}" } Des présentations par :
+              %ul
+                - @future_edition.talks.each do |talk|
+                  %li
+                    %a{ :href => "#opencode-#{@future_edition.number}" }
+                      %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
+                      %span= talk.title
+          .register
+            %a{ :href => "http://opencodeqc-#{@future_edition.number}.eventbrite.com/" } S’inscrire sur EventBrite
 
       %section#infos
         %section#concept
