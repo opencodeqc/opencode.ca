@@ -6,9 +6,9 @@ gem "unicorn"
 
 # Web
 gem "sinatra"
-gem "sinatra-partial", :require => "sinatra/partial"
 gem "sinatra-r18n", :require => "sinatra/r18n"
-gem "sinatra-contrib", :require => false # See config/boot.rb for
+gem "sinatra-contrib", :require => false # See config/boot.rb
+gem "sinatra-reloader"
 gem "rack-canonical-host"
 gem "yaml_record"
 gem "haml"
@@ -23,8 +23,6 @@ group :development do
   gem "capistrano"
   gem "capistrano-ext"
   gem "net-netrc"
-  gem "shotgun"
-  gem "thin"
   gem "pry"
   gem "rake"
 end

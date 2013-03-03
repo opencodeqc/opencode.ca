@@ -6,7 +6,6 @@ Bundler.require(:default, ENV['RACK_ENV']) if defined? Bundler
 # Since we can't require multiple files in Gemfile,
 # it's cleaner to require them here (even if there
 # is currently just one)
-require 'sinatra/content_for'
 require 'sinatra/json'
 
 # Require models

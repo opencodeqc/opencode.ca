@@ -19,6 +19,11 @@ map "/foo" do
   run OpenCode::EasterEgg
 end
 
+map "/api" do
+  # Coming soon!
+  # run OpenCode::API
+end
+
 map "/" do
   run OpenCode::App
 end

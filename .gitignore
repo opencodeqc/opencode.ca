@@ -6,3 +6,4 @@ tmp
 .sass-cache
 .rbenv-*
 _static
+.env

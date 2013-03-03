@@ -8,7 +8,6 @@
     %link{ :type => "image/png", :rel => "shortcut icon", :href => image_path("favicon.png") }
     %meta{ :name => "og:title", :content => "OpenCode" }
     %meta{ :name => "og:image", :content => "https://secure.gravatar.com/avatar/208eb5b4a3e5b2412de1d6eb5c0d37b3?s=200" }
-    = yield_content :head
     - if ENV["RACK_ENV"] == "production"
       :javascript
         var _gaq = _gaq || [];
@@ -25,7 +24,7 @@
         %section#next
           %p
             %span La <a href="#opencode-#{@future_edition.number}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>
-            %a.register{ :href => "#" } S’inscrire sur EventBrite
+            %a.register{ :href => "http://opencodeqc-#{@future_edition.number}.eventbrite.com/" } S’inscrire sur EventBrite
 
       %section#infos
         %section#concept
@@ -67,6 +66,10 @@
                               %a{ :href => talk.author_url }= talk.author_name
                             - else
                               = talk.author_name
+                            - if talk.slides_url
+                              %a.url{ :href => talk.slides_url, :title => "Présentation" } &middot;
+                            - if talk.code_url
+                              %a.url{ :href => talk.code_url, :title => "Code" } &middot;
                           #{talk.title}
                   - else
                     %p.notice La liste des présentations n’est pas encore disponible pour cette édition. Mais faites-nous confiance, ça va être bon!

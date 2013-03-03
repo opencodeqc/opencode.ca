@@ -14,7 +14,6 @@ GEM
     capistrano-ext (1.2.1)
       capistrano (>= 1.0.0)
     coderay (1.0.8)
-    daemons (1.1.4)
     eventmachine (0.12.10)
     haml (3.1.2)
     highline (1.6.2)
@@ -47,8 +46,6 @@ GEM
     raindrops (0.10.0)
     rake (10.0.2)
     sass (3.2.4)
-    shotgun (0.9)
-      rack (>= 1.0)
     sinatra (1.3.4)
       rack (~> 1.4)
       rack-protection (~> 1.3)
@@ -60,11 +57,11 @@ GEM
       rack-test
       sinatra (~> 1.3.0)
       tilt (~> 1.3)
-    sinatra-partial (0.4.0)
-      sinatra
     sinatra-r18n (1.1.3)
       r18n-core (= 1.1.3)
       sinatra (>= 1.3)
+    sinatra-reloader (1.0)
+      sinatra-contrib
     slop (3.3.3)
     sprockets (2.8.2)
       hike (~> 1.2)
@@ -76,10 +73,6 @@ GEM
     sprockets-sass (0.9.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    thin (1.2.11)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     tilt (1.3.3)
     unicorn (4.4.0)
       kgio (~> 2.6)
@@ -100,14 +93,12 @@ DEPENDENCIES
   rack-canonical-host
   rake
   sass
-  shotgun
   sinatra
   sinatra-contrib
-  sinatra-partial
   sinatra-r18n
+  sinatra-reloader
   sprockets
   sprockets-helpers
   sprockets-sass
-  thin
   unicorn
   yaml_record
