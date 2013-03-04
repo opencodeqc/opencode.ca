@@ -38,7 +38,7 @@
                       %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
                       %span= talk.title
           .register
-            %a{ :href => "http://opencodeqc-#{@future_edition.id}.eventbrite.com/" } S’inscrire sur EventBrite
+            %a{ :href => "http://opencodeqc-#{@future_edition.id}.eventbrite.com/" } S’inscrire sur <span>EventBrite</span>
 
       %section#infos
         %section#concept
@@ -86,7 +86,8 @@
                               %a.url{ :href => talk.code_url, :title => "Code" } code
                           #{talk.title}
                   - else
-                    %p.notice La liste des présentations n’est pas encore disponible pour cette édition. Mais faites-nous confiance, ça va être bon!
+                    %p.notice
+                      La liste des présentations n’est pas encore disponible pour cette édition. Mais faites-nous confiance, ça va être bon!
       %footer
         %p OpenCode est un évènement organisé dans les temps libres de <a href="https://twitter.com/JimmyBourassa">Jimmy Bourassa</a>, <a href="https://twitter.com/frederickdubois">Frédérick Dubois</a>, <a href="https://twitter.com/garno">Samuel Garneau</a> et <a href="https://twitter.com/remi">Rémi Prévost</a>, dans le but de permettre à la communauté de développeurs de Québec de s’épanouir.
         %p We ♥ code.
