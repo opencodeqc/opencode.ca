@@ -3,7 +3,7 @@ class Edition < YamlRecord::Base
   source File.expand_path('../../../data/editions',  __FILE__)
 
   # Properties
-  properties :title_fr, :held_at, :location
+  properties :title_fr, :held_at, :location, :incomplete
 
   # Retreive talks for this edition
   def talks
