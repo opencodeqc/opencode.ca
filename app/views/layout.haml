@@ -1,0 +1,31 @@
+!!!
+%html{ :lang => params[:locale] }
+  %head{ :prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" }
+    %meta{ :charset => "UTF-8" }
+    %title OpenCode Québec
+    %link{ :type => "text/css", :rel => "stylesheet", :media => :screen, :href => stylesheet_path("uluwatu") }
+    %link{ :type => "text/css", :rel => "stylesheet", :media => :screen, :href => "http://fonts.googleapis.com/css?family=Lato:light,regular,regularitalic,lightitalic,bold&v1" }
+    %link{ :type => "image/png", :rel => "shortcut icon", :href => image_path("favicon.png") }
+    %meta{ :name => "viewport", :content => "width=device-width" }
+    %meta{ :name => "og:title", :content => "OpenCode" }
+    %meta{ :name => "og:image", :content => image_path("bigicon.png") }
+    %meta{ :name => "og:url", :content => "http://opencode.ca" }
+    %meta{ :name => "og:description", :content => "Un OpenCode est un évènement sans prétention, amical et informel qui s’adresse aux développeurs et programmeurs." }
+    - if ENV["RACK_ENV"] == "production"
+      :javascript
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24416048-1']);
+        _gaq.push(['_trackPageview']);
+        (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+  %body
+    #wrap
+      %header
+        %h1
+          %a{ :href => "/" }
+            %img{ :src => image_path("img-logo.png"), :alt => "OpenCode" }
+
+      = yield
+
+      %footer
+        %p OpenCode est un évènement organisé dans les temps libres de <a href="https://twitter.com/JimmyBourassa">Jimmy Bourassa</a>, <a href="https://twitter.com/frederickdubois">Frédérick Dubois</a>, <a href="https://twitter.com/garno">Samuel Garneau</a> et <a href="https://twitter.com/remi">Rémi Prévost</a>, dans le but de permettre à la communauté de développeurs de Québec de s’épanouir.
+        %p We ♥ code.

@@ -1,0 +1,6 @@
+%section#leaderboard
+  %h2 Auteur - Talks
+  %ul
+    - @authors.each do |author|
+      %li
+        #{author[0]} - #{author[1]}
