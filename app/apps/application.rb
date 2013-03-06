@@ -31,5 +31,16 @@ module OpenCode
     end
 
     get("/") { haml :index }
+
+    get "/leaderboard" do
+      h = Hash.new(0)
+      Talk.all.each do |talk|
+        next if talk.edition_id == @future_edition.id
+        h[talk.author_name] += 1
+      end
+
+      @authors = h.sort_by {|k, v| -v}
+      haml :leaderboard
+    end
   end
 end
