@@ -14,4 +14,8 @@ class Edition < YamlRecord::Base
   def as_json
     attributes
   end
+
+  def slug
+    "opencode-#{self.id}"
+  end
 end
