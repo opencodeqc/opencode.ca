@@ -36,7 +36,9 @@
                   %li
                     %a{ :href => "#opencode-#{@future_edition.id}" }
                       %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
-                      %span= talk.title
+                      %span
+                        %em= talk.author_name
+                        %strong= talk.title
                 - if @future_edition.incomplete
                   %li.missing-talks
                     %a{ :href => "#opencode-#{@future_edition.id}" } …
