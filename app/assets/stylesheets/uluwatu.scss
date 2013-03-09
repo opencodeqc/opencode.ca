@@ -1,6 +1,10 @@
 @import url(asset-path("reset.css"));
 @import "_mixins";
 
+strong { //il y a possiblement un meilleur endroit pour ça...
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -20,13 +24,14 @@ body {
   line-height: 1.4;
   font-weight: 300;
   padding: 0 30px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-}
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1); 
+}  
 
 a {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   border-bottom: 1px dotted rgba(255,255,255,0.2);
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
 
   &:hover {
     color: rgba(255,255,255,0.9);
@@ -43,7 +48,7 @@ h2 {
   margin: 0 0 7px;
   padding: 0 0 7px;
   border-bottom: 1px solid rgba(255,255,255,0.2);
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); 
 }
 
 #wrap {
@@ -335,7 +340,7 @@ footer {
           padding: 0 0 0 13px;
           border: none;
           margin: 0 0 0 3px;
-          opacity: 0.2;
+          opacity: 0.4;
           font-size: 90%;
           color: #fff;
 
