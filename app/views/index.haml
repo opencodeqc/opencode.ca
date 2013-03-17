@@ -26,7 +26,7 @@
       - if @future_edition
         %section#next{ :class => @future_edition.talks.empty? ? "no-talks-yet" : "" }
           %p
-            %span La <a href="##{@future_edition.slug}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y à %H:%M"} à l’<a href="http://abri.co">Abri.Co</a>.
+            %span La <a href="##{@future_edition.slug}">prochaine édition</a> de l’OpenCode aura lieu le #{l @future_edition.held_at, "%-d %B %Y"} à #{l @future_edition.held_at, "%H:%M"} à l’<a href="http://abri.co">Abri.Co</a>.
           - if @future_edition.talks.any?
             .talks
               %p
