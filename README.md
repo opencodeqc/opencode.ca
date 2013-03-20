@@ -1,18 +1,15 @@
-## Run the application
+# opencode.ca
 
-Start the application on `http://0.0.0.0:5005`.
+This is the source code that runs on <http://opencode.ca>.
+
+## Run the application
 
 ```shell
 $ bundle install
-$ bundle exec shotgun --port 5005 --host 0.0.0.0
-```
-
-## Add URLs to your talk
-
-```shell
-$ bundle exec rake console
->> talk = Talk.all.select { |t| t.title =~ /RSpec/ }.first
-talk.code_url = "https://github.com/remiprev/introduction-a-rspec"
-talk.slides_url = "http://speakerdeck.com/remi/introduction-a-rspec"
-talk.save
+$ cp .env.default .env
+$ foreman start
+08:06:56 web.1  | I, [2013-02-25T08:06:56.476145 #59550]  INFO -- : Refreshing Gem list
+08:06:57 web.1  | I, [2013-02-25T08:06:57.489849 #59550]  INFO -- : listening on addr=0.0.0.0:5005 fd=11
+08:06:58 web.1  | I, [2013-02-25T08:06:58.507881 #59550]  INFO -- : master process ready
+08:06:58 web.1  | I, [2013-02-25T08:06:58.520232 #59718]  INFO -- : worker=0 ready
 ```
