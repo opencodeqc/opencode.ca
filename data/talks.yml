@@ -138,7 +138,7 @@
   :edition_id: 3
   :id: !binary |-
     YzliOWU0MTA5YTlhODQ2YzgwOTY3YWFhYjVlM2Vl
-- :title: Cassandra, Hadoop &amp; Pig
+- :title: Cassandra, Hadoop & Pig
   :author_name: Nicolas Garneau
   :author_screenname: ngarneau
   :code_url: https://github.com/ngarneau/opencode
@@ -191,7 +191,7 @@
   :edition_id: 1
   :id: !binary |-
     NTNmMWE5NzM4NjU1MzEyMzM4NDMwZTI4YWM1ODI1
-- :title: ! 'HTML5 : Canvas API &amp; animations'
+- :title: ! 'HTML5 : Canvas API & animations'
   :author_name: Alain Gilbert
   :author_screenname: alain_gilbert
   :code_url: https://github.com/alaingilbert/presentation-html5
@@ -205,7 +205,7 @@
   :edition_id: 0
   :id: !binary |-
     MzEyMzdmNjQ3YmNhNDI4YzY3YzFiODJlZTA2OThk
-- :title: Django &amp; Buildout
+- :title: Django & Buildout
   :author_name: Bernard Chhun
   :author_screenname: bechhun
   :code_url: https://github.com/bchhun/opencode-talk
@@ -218,7 +218,7 @@
   :edition_id: 0
   :id: !binary |-
     MDZhNWVkZmFhNTBkYmZkN2Y1YmY2NjJlZjQyZTBl
-- :title: Haml &amp; Sass
+- :title: Haml & Sass
   :author_name: Rémi Prévost
   :author_screenname: remi
   :slides_url: https://speakerdeck.com/u/remi/p/haml-sass-en-10-minutes-faciles
