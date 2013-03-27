@@ -275,6 +275,8 @@
 - :title: <code>tmux</code>, <code>teamocil</code> & <em>friends</em>
   :author_name: Rémi Prévost
   :author_screenname: remi
+  :slides_url: https://speakerdeck.com/remi/tmux-teamocil-and-friends
+  :code_url: https://github.com/remiprev/tmuxfiles
   :edition_id: 10
   :id: !binary |-
     NjMwNGQ4NWVhODY3NWRlZjUwOGM5OTVkMjdhYzg0
