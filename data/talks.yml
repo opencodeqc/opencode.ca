@@ -265,6 +265,7 @@
   :author_name: Jimmy Bourassa
   :author_screenname: JimmyBourassa
   :edition_id: 10
+  :slides_url: https://gist.github.com/jbourassa/5267853
   :id: !binary |-
     OTAxYjg3ZmQ0ZWFkMGRjODQ5NTZjNmFlZjM3Mjdi
 - :title: Structures de données pour haute performance
