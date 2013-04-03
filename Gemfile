@@ -24,4 +24,5 @@ gem "sprockets-helpers"
 group :development do
   gem "pry"
   gem "rake"
+  gem "foreman"
 end
