@@ -43,3 +43,8 @@
   :held_at: 2013-03-26 18:00:00-0400
   :location: Abri.Co
   :id: 10
+- :title_fr: Onzième Édition
+  :held_at: 2013-04-30 18:00:00-0400
+  :location: Abri.Co
+  :id: 11
+  :incomplete: true

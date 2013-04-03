@@ -201,3 +201,11 @@
   :slides_url: https://speakerdeck.com/remi/tmux-teamocil-and-friends
   :code_url: https://github.com/remiprev/tmuxfiles
   :edition_id: 10
+- :title: Trucs et astuces Rails
+  :author_name: Rafaël Blais-Masson
+  :author_screenname: rafBM
+  :edition_id: 11
+- :title: Processing étape par étape en Ruby avec Hero
+  :author_name: Samuel Garneau
+  :author_screenname: garno
+  :edition_id: 11
