@@ -205,7 +205,15 @@
   :author_name: Rafaël Blais-Masson
   :author_screenname: rafBM
   :edition_id: 11
+- :title: Web app workflow avec Yeoman
+  :author_name: Louis-Michel Couture
+  :author_screenname: louim
+  :edition_id: 11
 - :title: Processing étape par étape en Ruby avec Hero
   :author_name: Samuel Garneau
   :author_screenname: garno
+  :edition_id: 11
+- :title: Arduino, électroniques et Raspberry Pi
+  :author_name: Antoine Leclair
+  :author_screenname: AntoineLeclair
   :edition_id: 11
