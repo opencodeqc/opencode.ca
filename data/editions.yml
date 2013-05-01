@@ -47,3 +47,8 @@
   :held_at: 2013-04-30 18:00:00-0400
   :location: Abri.Co
   :id: 11
+- :title_fr: Douxième Édition
+  :held_at: 2013-05-28 18:00:00-0400
+  :location: Abri.Co
+  :id: 12
+  :incomplete: true

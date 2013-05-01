@@ -214,3 +214,14 @@
   :author_name: Jean-Philippe Sirois
   :author_screenname: JP_Sirois
   :edition_id: 11
+- :title: Trucs et astuces Ruby on Rails
+  :author_name: Rafaël Blais-Masson
+  :author_screenname: rafBM
+  :edition_id: 12
+- :title: Détection de deadlocks avec d2
+  :author_name: Louis Dionne
+  :edition_id: 12
+- :title: Responsive Web Design performant
+  :author_name: Damien Van Der Windt
+  :author_screenname: damienvdw
+  :edition_id: 12
