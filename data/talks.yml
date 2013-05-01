@@ -218,6 +218,10 @@
   :author_name: Rafaël Blais-Masson
   :author_screenname: rafBM
   :edition_id: 12
+- :title: PostgreSQL+
+  :author_name: Guillaume Coguiec
+  :author_screenname: gcoguiec
+  :edition_id: 12
 - :title: Détection de deadlocks avec d2
   :author_name: Louis Dionne
   :edition_id: 12
