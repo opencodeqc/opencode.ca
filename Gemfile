@@ -10,6 +10,7 @@ gem "sinatra-r18n", :require => "sinatra/r18n"
 gem "sinatra-contrib", :require => false # See config/boot.rb
 gem "sinatra-reloader"
 gem "rack-canonical-host"
+gem "rack-jsonp"
 gem "yaml_record"
 gem "haml"
 gem "json"

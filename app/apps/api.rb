@@ -2,6 +2,7 @@
 
 module OpenCode
   class API < Sinatra::Base
+    use Rack::JSONP
     helpers Sinatra::JSON
 
     configure do
