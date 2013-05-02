@@ -171,6 +171,7 @@
   :edition_id: 9
 - :title: <em>Concept based overloading</em> en C++
   :author_name: Louis Dionne
+  :author_screenname: LouisDionne
   :slides_url: https://docs.google.com/presentation/d/1HpjEz6dJauNoBxMGWzaNuOOoiVwqgISTNWNTwuOo-_8/edit#slide=id.gd8ce43ea_0146
   :code_url: https://github.com/ldionne/seminars/tree/master/opencode9_concept_overloading
   :edition_id: 9
@@ -226,6 +227,7 @@
   :edition_id: 12
 - :title: Détection de deadlocks avec d2
   :author_name: Louis Dionne
+  :author_screenname: LouisDionne
   :edition_id: 12
 - :title: Responsive Web Design performant
   :author_name: Damien Van Der Windt
