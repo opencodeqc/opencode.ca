@@ -225,6 +225,7 @@
   :author_name: Guillaume Coguiec
   :author_screenname: gcoguiec
   :edition_id: 12
+  :slides_url: https://speakerdeck.com/gcoguiec/postgresql-plus
 - :title: Détection de deadlocks avec d2
   :author_name: Louis Dionne
   :author_screenname: LouisDionne
