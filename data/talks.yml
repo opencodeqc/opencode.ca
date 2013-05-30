@@ -220,6 +220,7 @@
 - :title: Trucs et astuces Ruby on Rails
   :author_name: Rafaël Blais-Masson
   :author_screenname: rafBM
+  :code_url: https://github.com/rafBM/opencode12-rails
   :edition_id: 12
 - :title: PostgreSQL+
   :author_name: Guillaume Coguiec
@@ -235,4 +236,5 @@
 - :title: Responsive Web Design performant
   :author_name: Damien Van Der Windt
   :author_screenname: damienvdw
+  :slides_url: https://speakerdeck.com/damienvdw/rwd-performant
   :edition_id: 12
