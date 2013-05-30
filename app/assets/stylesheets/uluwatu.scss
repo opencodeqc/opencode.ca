@@ -97,12 +97,12 @@ footer {
   font-size: 0;
   background: rgba(0,0,0,0.4);
   @include border-radius(5px);
-  padding: 14px 18px 20px;
+  padding: 14px 22px 20px;
 
   & > p {
     font-size: 16px;
     display: block;
-    margin: 0 0 20px;
+    margin: 0;
   }
 
   .next-wrapper {
