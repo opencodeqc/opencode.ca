@@ -21,7 +21,7 @@
 - :title: <em>Crash Course</em> sur les sockets
   :author_name: Jean-Michel Lacroix
   :author_screenname: jmlacroix
-  :slides_url: ! ' https://speakerdeck.com/jmlacroix/crash-course-sur-les-sockets'
+  :slides_url: https://speakerdeck.com/jmlacroix/crash-course-sur-les-sockets
   :code_url: https://gist.github.com/3982311
   :edition_id: 7
 - :title: AppFog
@@ -135,7 +135,7 @@
   :author_name: Samuel Garneau
   :author_screenname: garno
   :edition_id: 1
-- :title: ! 'HTML5 : Canvas API & animations'
+- :title: 'HTML5 : Canvas API & animations'
   :author_name: Alain Gilbert
   :author_screenname: alain_gilbert
   :code_url: https://github.com/alaingilbert/presentation-html5
@@ -189,8 +189,8 @@
 - :title: Dompter la ligne de commande
   :author_name: Jimmy Bourassa
   :author_screenname: JimmyBourassa
-  :edition_id: 10
   :slides_url: https://gist.github.com/jbourassa/5267853
+  :edition_id: 10
 - :title: Structures de données pour haute performance
   :author_name: Julien Marcil
   :author_screenname: Nr9
@@ -225,14 +225,14 @@
 - :title: PostgreSQL+
   :author_name: Guillaume Coguiec
   :author_screenname: gcoguiec
-  :edition_id: 12
   :slides_url: https://speakerdeck.com/gcoguiec/postgresql-plus
+  :edition_id: 12
 - :title: Détection de deadlocks avec d2
   :author_name: Louis Dionne
   :author_screenname: LouisDionne
-  :edition_id: 12
   :slides_url: http://ldionne.github.io/d2-opencode12
   :code_url: https://github.com/ldionne/d2-opencode12
+  :edition_id: 12
 - :title: Responsive Web Design performant
   :author_name: Damien Van Der Windt
   :author_screenname: damienvdw
