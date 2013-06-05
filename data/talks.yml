@@ -238,3 +238,15 @@
   :author_screenname: damienvdw
   :slides_url: https://speakerdeck.com/damienvdw/rwd-performant
   :edition_id: 12
+- :title: Git, GitHub & <em>friends</em>
+  :author_name: Pierre-Luc Babin
+  :author_screenname: plbabin
+  :edition_id: 13
+- :title: Introduction à Clojure
+  :author_name: François Bernier
+  :author_screenname: f_bernier
+  :edition_id: 13
+- :title: Là où tout est trop implicite
+  :author_name: Louis-André Labadie
+  :author_screenname: lalabadie
+  :edition_id: 13
