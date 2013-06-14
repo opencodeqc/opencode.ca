@@ -188,6 +188,19 @@ footer {
 
         img {
           @include border-radius(3px);
+
+          &.duo {
+            position: relative;
+
+            &:first-of-type {
+              top: -3px;
+            }
+
+            &:last-of-type {
+              top: 3px;
+              left: -14px;
+            }
+          }
         }
 
         span {
@@ -303,6 +316,7 @@ footer {
     ul {
       li {
         margin: 0 0 12px;
+        position: relative;
 
         &:last-child {
           margin-bottom: 0;
@@ -318,6 +332,21 @@ footer {
           @include border-radius(3px);
           margin: 0 -48px 0 0;
           @include transition(opacity 0.1s linear);
+
+          &.duo {
+            position: relative;
+
+            &:first-of-type {
+              margin-right: -36px;
+            }
+
+            &:last-of-type {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              margin: 0;
+            }
+          }
         }
 
         a:hover img {
@@ -336,6 +365,15 @@ footer {
             display: block;
             font-size: 90%;
             margin: 0 0 3px;
+          }
+
+          .duo {
+            &:after {
+              content: ', ';
+            }
+            &:last-of-type:after {
+              content: '';
+            }
           }
         }
 

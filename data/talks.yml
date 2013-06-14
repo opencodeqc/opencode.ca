@@ -250,3 +250,10 @@
   :author_name: Louis-André Labadie
   :author_screenname: lalabadie
   :edition_id: 13
+- :title: How I met a developer on the other side of the world
+  :authors:
+    - :author_name: Christian Joudrey
+      :author_screenname: cjoudrey
+    - :author_name: Edward Ocampo-Gooding
+      :author_screenname: edwardog
+  :edition_id: 13

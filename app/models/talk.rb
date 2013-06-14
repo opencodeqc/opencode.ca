@@ -5,7 +5,7 @@ class Talk < YamlRecord::Base
   source File.expand_path('../../../data/talks',  __FILE__)
 
   # Properties
-  properties :title, :author_name, :author_screenname, :slides_url, :code_url, :edition_id
+  properties :title, :author_name, :author_screenname, :slides_url, :code_url, :edition_id, :authors
 
   # Return the author picture URL, if present
   def author_picture_url
@@ -23,6 +23,10 @@ class Talk < YamlRecord::Base
     @author_url ||= begin
       "http://twitter.com/#{self.author_screenname}" if self.author_screenname
     end
+  end
+
+  def authors=(data)
+    self[:authors] = (data || []).map { |a| Talk.new(a) }
   end
 
   # Return the object as a Hash

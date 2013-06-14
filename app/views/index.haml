@@ -35,7 +35,11 @@
                 - @future_edition.talks.each do |talk|
                   %li
                     %a{ :href => "##{@future_edition.slug}" }
-                      %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
+                      - if talk.authors.any?
+                        - talk.authors.each do |author|
+                          %img{ :class => 'duo', :src => author.author_picture_url, :width => "30", :height => "30" }
+                      - else
+                        %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
                       %span
                         %em= talk.author_name
                         %strong= talk.title
@@ -78,13 +82,21 @@
                           %a{ :href => talk.author_url }
                             %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
                         - else
-                          %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
+                          - if talk.authors.any?
+                            - talk.authors.each do |author|
+                              %img{ :class => 'duo', :src => author.author_picture_url, :width => "24", :height => "24" }
+                          - else
+                            %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
                         %span.talk-infos
                           %strong
                             - if talk.author_url
                               %a{ :href => talk.author_url }= talk.author_name
                             - else
-                              = talk.author_name
+                              - if talk.authors.any?
+                                - talk.authors.each do |author|
+                                  %a{ :class => 'duo', :href => author.author_url }= author.author_name
+                              - else
+                                = talk.author_name
                             - if talk.slides_url
                               %a.url{ :href => talk.slides_url, :title => "Présentation" } slides
                             - if talk.code_url
