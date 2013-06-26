@@ -245,6 +245,7 @@
 - :title: Introduction à Clojure
   :author_name: François Bernier
   :author_screenname: f_bernier
+  :slides_url: http://www.fbernier.me/opencode-13-slides/
   :edition_id: 13
 - :title: Là où tout est trop implicite
   :author_name: Louis-André Labadie
