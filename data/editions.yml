@@ -55,3 +55,8 @@
   :held_at: 2013-06-25 18:00:00-0400
   :location: Abri.Co
   :id: 13
+- :title_fr: OpenCode XIV
+  :held_at: 2013-07-30 18:00:00-0400
+  :location: Abri.Co
+  :id: 14
+  :incomplete: true
