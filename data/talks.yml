@@ -257,6 +257,10 @@
     - :author_name: Edward Ocampo-Gooding
       :author_screenname: edwardog
   :edition_id: 13
+- :title: “<em>Use the source, dude.</em>”
+  :author_name: Pier-Olivier Thibault
+  :author_screenname: pothibo
+  :edition_id: 14
 - :title: CouchDB
   :author_name: Jean-Sébastien Tremblay
   :author_screenname: JeanSebTr
