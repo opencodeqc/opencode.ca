@@ -257,6 +257,10 @@
     - :author_name: Edward Ocampo-Gooding
       :author_screenname: edwardog
   :edition_id: 13
+- :title: Sur RubyGems en 20 minutes
+  :author_name: Rémi Prévost
+  :author_screenname: remi
+  :edition_id: 14
 - :title: “<em>Use the source, dude.</em>”
   :author_name: Pier-Olivier Thibault
   :author_screenname: pothibo
