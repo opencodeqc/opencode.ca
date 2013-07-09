@@ -5,7 +5,7 @@
     %title OpenCode Québec
     %link{ :type => "text/css", :rel => "stylesheet", :media => :screen, :href => stylesheet_path("uluwatu") }
     %link{ :type => "text/css", :rel => "stylesheet", :media => :screen, :href => "http://fonts.googleapis.com/css?family=Lato:light,regular,regularitalic,lightitalic,bold&v1" }
-    %link{ :type => "image/png", :rel => "shortcut icon", :href => image_path("favicon.png") }
+    %link{ :type => "image/png", :rel => "shortcut icon", :href => image_path("bigicon.png") }
     %meta{ :name => "viewport", :content => "width=device-width" }
     %meta{ :name => "og:title", :content => "OpenCode" }
     %meta{ :name => "og:image", :content => image_path("bigicon.png") }
@@ -22,7 +22,7 @@
       %header
         %h1
           %a{ :href => "/" }
-            %img{ :src => image_path("img-logo-2.png"), :alt => "OpenCode" }
+            %img{ :src => image_path("img-logo.png"), :alt => "OpenCode" }
       - if @future_edition
         %section#next{ :class => @future_edition.talks.empty? ? "no-talks-yet" : "" }
           %p
