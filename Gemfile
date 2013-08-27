@@ -26,4 +26,5 @@ group :development do
   gem "pry"
   gem "rake"
   gem "foreman"
+  gem "hanzo"
 end
