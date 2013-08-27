@@ -274,3 +274,11 @@
   :author_name: Jean-Sébastien Tremblay
   :author_screenname: JeanSebTr
   :edition_id: 14
+- :title: Déboguer une application de calcul distribué en C++ avec RayPlatform
+  :author_name: Sébastien Boisvert
+  :author_screenname: sebhtml
+  :edition_id: 15
+- :title: Fabric, le micro-framework d’automatisation
+  :author_name: Gregory Eric Sanderson
+  :author_screenname: gelendir
+  :edition_id: 15

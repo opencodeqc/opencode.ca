@@ -59,3 +59,8 @@
   :held_at: 2013-07-30 18:00:00-0400
   :location: Abri.Co
   :id: 14
+- :title_fr: OpenCode XV
+  :held_at: 2013-09-24 18:00:00-0400
+  :location: Abri.Co
+  :id: 15
+  :incomplete: true
