@@ -10,8 +10,8 @@ GEM
       thor (>= 0.13.6)
     haml (4.0.2)
       tilt
-    hanzo (0.2)
-      highline
+    hanzo (0.2.3)
+      highline (>= 1.6.19)
     highline (1.6.19)
     hike (1.2.1)
     json (1.7.7)
@@ -78,7 +78,7 @@ PLATFORMS
 DEPENDENCIES
   foreman
   haml
-  hanzo
+  hanzo (~> 0.2.3)
   json
   multi_json
   pry

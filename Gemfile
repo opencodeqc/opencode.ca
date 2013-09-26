@@ -26,5 +26,5 @@ group :development do
   gem "pry"
   gem "rake"
   gem "foreman"
-  gem "hanzo"
+  gem "hanzo", '~> 0.2.3'
 end
