@@ -53,8 +53,9 @@
                       %span
                         %em Tout le monde
                         %strong Trucs et astuces à partager
-          .register
-            %a{ :href => "http://opencodeqc-#{@future_edition.id}.eventbrite.com/" } S’inscrire sur <span>EventBrite</span>
+          - if @future_edition.talks.any?
+            .register
+              %a{ :href => "http://opencodeqc-#{@future_edition.id}.eventbrite.com/" } S’inscrire sur <span>EventBrite</span>
 
       %section#infos
         %section#concept
