@@ -288,3 +288,18 @@
   :author_screenname: gelendir
   :code_url: https://github.com/gelendir/opencode-fabric
   :edition_id: 15
+- :title: LightTable
+  :author_name: Jean-Sébastien A Beaudry
+  :edition_id: 16
+- :title: Ruby et sa <code>stdlib</code>
+  :author_name: Rafaël Blais-Masson
+  :author_screenname: rafBM
+  :edition_id: 16
+- :title: J2EE dans le monde Web
+  :author_name: Guillaume Cauchon
+  :author_screenname: gcauchon
+  :edition_id: 16
+- :title: <em>Un nom de présentation mystérieux</em>
+  :author_name: Samuel Garneau
+  :author_screenname: garno
+  :edition_id: 16
