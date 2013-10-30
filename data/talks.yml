@@ -295,6 +295,8 @@
 - :title: J2EE dans le monde Web
   :author_name: Guillaume Cauchon
   :author_screenname: gcauchon
+  :slides_url: http://prezi.com/wrtofrg_zzsy/opencode-xvi/ 
+  :code_url: https://github.com/gcauchon/j2ee_web/
   :edition_id: 16
 - :title: Chrome DevTools magic tricks
   :author_name: Louis-Michel Couture
