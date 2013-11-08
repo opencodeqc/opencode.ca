@@ -306,3 +306,15 @@
   :author_name: Samuel Garneau
   :author_screenname: garno
   :edition_id: 16
+- :title: Mocks, stubs & seams
+  :author_name: Nicolas Garneau
+  :author_screenname: ngarneau
+  :edition_id: 17
+- :title: 20 minutes avec Rémi
+  :author_name: Rémi Prévost
+  :author_screenname: remi
+  :edition_id: 17
+- :title: Elixir
+  :author_name: Simon Prévost
+  :author_screenname: simonprev
+  :edition_id: 17
