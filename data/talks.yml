@@ -306,6 +306,10 @@
   :author_name: Samuel Garneau
   :author_screenname: garno
   :edition_id: 16
+- :title: 'Node-Webkit : des licornes, des lasers & du P2P'
+  :author_name: Mathieu Dumont
+  :author_screenname: MathDumont
+  :edition_id: 17
 - :title: Mocks, stubs & seams
   :author_name: Nicolas Garneau
   :author_screenname: ngarneau
