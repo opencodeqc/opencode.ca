@@ -19,6 +19,15 @@ module OpenCode
       end
     end
 
+    before do
+      response.headers['Access-Control-Allow-Origin'] = "*"
+      response.headers['Access-Control-Allow-Methods'] = 'GET'
+      response.headers['Access-Control-Allow-Headers'] = 'X-Requested-With, Content-Type, Authorization'
+    end
+
+    options "*" do
+    end
+
     get "/" do
       json :endpoints => ["/editions", "/editions/<edition_id>", "/editions/<edition_id>/talks/<talk_id>"]
     end
