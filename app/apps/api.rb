@@ -17,6 +17,10 @@ module OpenCode
       def bail(error_message=nil)
         halt 404, { :error => error_message || "Oops." }.to_json
       end
+
+      def render_edition(edition)
+        json edition.as_json.merge(:talks => edition.talks.map(&:as_json))
+      end
     end
 
     before do
@@ -37,10 +41,15 @@ module OpenCode
       json @editions.map(&:as_json)
     end
 
+    get "/editions/current" do
+      @edition = Edition.all.last
+      render_edition(@edition)
+    end
+
     get "/editions/:id" do
       @edition = Edition.find(params[:id].to_i)
       bail "Unknown edition" unless @edition
-      json @edition.as_json.merge(:talks => @edition.talks.map(&:as_json))
+      render_edition(@edition)
     end
 
     get "/editions/:edition_id/talks/:id" do
