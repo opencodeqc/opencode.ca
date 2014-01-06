@@ -322,3 +322,18 @@
   :author_name: Simon Prévost
   :author_screenname: simonprev
   :edition_id: 17
+- :title: Ember.js
+  :author_name: Mathieu Dumont
+  :author_screenname: MathDumont
+  :edition_id: 18
+- :title: ElasticSearch
+  :author_name: Jacques-Olivier D. Bernier
+  :author_screenname: jackdbernier
+  :edition_id: 18
+- :title: Node.js, Erlang et le Web réactif
+  :author_name: Mathieu D’Amours
+  :edition_id: 18
+- :title: <em>Sujet à déterminer</em>
+  :author_name: Un gars de Hookt Studios
+  :author_screenname: HooktStudios
+  :edition_id: 18
