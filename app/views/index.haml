@@ -122,8 +122,13 @@
                           Trucs et astuces à partager
 
                   - else
-                    %p.notice
-                      La liste des présentations n’est pas encore disponible pour cette édition. Mais faites-nous confiance, ça va être bon!
+                    - if edition.incomplete
+                      %li.notice
+                        Nous recherchons encore des passionnés pour présenter un sujet qui les intéresse lors de cette édition.
+                        %a{ :href => '#talk-proposal' } Contactez-nous!
+                    - else
+                      %p.notice
+                        La liste des présentations n’est pas encore disponible pour cette édition. Mais faites-nous confiance, ça va être bon!
       %footer
         %p OpenCode est un évènement organisé dans les temps libres de <a href="https://twitter.com/JimmyBourassa">Jimmy Bourassa</a>, <a href="https://twitter.com/frederickdubois">Frédérick Dubois</a>, <a href="https://twitter.com/garno">Samuel Garneau</a> et <a href="https://twitter.com/remi">Rémi Prévost</a>, dans le but de permettre à la communauté de développeurs de Québec de s’épanouir.
         %p We <a href="https://github.com/opencodeqc/opencode.ca">♥</a> code.

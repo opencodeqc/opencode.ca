@@ -76,3 +76,8 @@
   :held_at: 2014-01-28 18:00:00-0500
   :location: Abri.Co
   :id: 18
+- :title_fr: OpenCode XIX
+  :held_at: 2014-02-25 18:00:00-0500
+  :location: Abri.Co
+  :id: 19
+  :incomplete: true
