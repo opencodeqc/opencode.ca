@@ -37,7 +37,10 @@ module OpenCode
         "/editions",
         "/editions/<edition_id>",
         "/editions/<edition_id>/talks/<talk_id>",
-        "/editions/current"
+        "/editions/current",
+        "/speakers",
+        "/speakers/<speaker_id>",
+        "/speakers/<speaker_id>/talks"
       ]
     end
 
