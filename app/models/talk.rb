@@ -5,7 +5,7 @@ class Talk < YamlRecord::Base
   source File.expand_path('../../../data/talks',  __FILE__)
 
   # Properties
-  properties :title, :author_name, :author_screenname, :slides_url, :code_url, :edition_id, :authors
+  properties :title, :slides_url, :code_url, :edition_id
 
   # Return the author picture URL, if present
   def author_picture_url

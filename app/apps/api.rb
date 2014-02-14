@@ -62,5 +62,16 @@ module OpenCode
       bail "Unknown talk" unless @talk and @talk.edition_id == params[:edition_id].to_i
       json @talk.as_json
     end
+
+    get "/speakers" do
+      @speakers = Speaker.all
+      json @speakers.map(&:as_json)
+    end
+
+    get "/speakers/:id" do
+      @speaker = Speaker.find(params[:id].to_i)
+      bail "Unknown speaker" unless @speaker
+      json @speaker.as_json
+    end
   end
 end
