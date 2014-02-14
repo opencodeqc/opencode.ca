@@ -56,11 +56,5 @@ module OpenCode
       bail "Unknown edition" unless @edition
       render_edition(@edition)
     end
-
-    get "/editions/:edition_id/talks/:id" do
-      @talk = Talk.find(params[:id])
-      bail "Unknown talk" unless @talk and @talk.edition_id == params[:edition_id].to_i
-      json @talk.as_json
-    end
   end
 end
