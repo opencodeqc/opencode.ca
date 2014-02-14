@@ -36,7 +36,6 @@ module OpenCode
       json :endpoints => [
         "/editions",
         "/editions/<edition_id>",
-        "/editions/<edition_id>/talks/<talk_id>",
         "/editions/current"
       ]
     end
@@ -55,12 +54,6 @@ module OpenCode
       @edition = Edition.find(params[:id].to_i)
       bail "Unknown edition" unless @edition
       render_edition(@edition)
-    end
-
-    get "/editions/:edition_id/talks/:id" do
-      @talk = Talk.find(params[:id])
-      bail "Unknown talk" unless @talk and @talk.edition_id == params[:edition_id].to_i
-      json @talk.as_json
     end
   end
 end
