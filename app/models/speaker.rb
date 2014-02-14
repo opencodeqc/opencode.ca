@@ -27,7 +27,13 @@ class Speaker < YamlRecord::Base
 
   # Retreive talks for this speaker
   def talks
-    @talks ||= Talk.all.select { |t| t.author_screenname == self.id }
+    @talks ||= Talk.all.select do |t|
+      if t.authors.any?
+        t.author_id.include?(self.id)
+      else
+        t.author_id == self.id
+      end
+    end
   end
 
   def as_json
