@@ -12,15 +12,14 @@ html {
 }
 
 body {
-  background: asset-url("bg-body.jpg") fixed no-repeat 50% 50%;
-  background-size: cover;
+  background: #222;
   color: #fff;
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: "proxima-nova", Helvetica, sans-serif;
   font-size: 160%;
   line-height: 1.4;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0 30px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -41,10 +40,9 @@ code {
 
 h2 {
   font-size: 120%;
-  margin: 0 0 7px;
+  margin: 20px 0 7px;
   padding: 0 0 7px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(#fff,0.05);
 }
 
 #wrap {
@@ -55,23 +53,24 @@ h2 {
 }
 
 header {
-  padding: 50px 0 40px;
-  text-transform: uppercase;
-  font-size: 150%;
+  padding: 160px 0;
+  font-size: 130%;
 
   a {
     border: none;
+    text-align: center;
+    display: block;
 
     img {
       display: inline-block;
       width: 100%;
-      max-width: 420px;
-      @include transition(opacity 0.1s linear);
+      max-width: 559px;
+      @include transition(opacity 0.4s linear);
     }
 
     &:hover {
       img {
-        opacity: 0.5;
+        opacity: 0.2;
       }
     }
   }
@@ -95,7 +94,7 @@ footer {
   display: inline-block;
   margin: 0 0 45px 0;
   font-size: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   @include border-radius(5px);
   padding: 14px 22px 20px;
 
@@ -336,7 +335,7 @@ footer {
 
     ul {
       li {
-        margin: 0 0 12px;
+        margin: 0 0 18px;
         position: relative;
 
         &:last-child {
