@@ -56,6 +56,10 @@ header {
   padding: 160px 0;
   font-size: 130%;
 
+  @include medium-device {
+    padding: 60px 0;
+  }
+
   a {
     border: none;
     text-align: center;
