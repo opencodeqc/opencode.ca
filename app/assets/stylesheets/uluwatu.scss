@@ -356,6 +356,10 @@ footer {
           @include border-radius(3px);
           margin: 0 -48px 0 0;
           @include transition(opacity 0.1s linear);
+          -moz-filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
 
           &.duo {
             position: relative;
