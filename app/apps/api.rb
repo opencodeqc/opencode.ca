@@ -72,13 +72,13 @@ module OpenCode
     end
 
     get "/speakers/:id" do
-      @speaker = Speaker.find(params[:id].to_i)
+      @speaker = Speaker.find_by_attribute(:screenname, params[:id])
       bail "Unknown speaker" unless @speaker
       json @speaker.as_json
     end
 
     get "/speakers/:id/talks" do
-      @speaker = Speaker.find(params[:id].to_i)
+      @speaker = Speaker.find_by_attribute(:screenname, params[:id])
       bail "Unknown speaker" unless @speaker
       json @speaker.talks.map(&:as_json)
     end
