@@ -37,7 +37,10 @@ module OpenCode
         "/editions",
         "/editions/<edition_id>",
         "/editions/<edition_id>/talks/<talk_id>",
-        "/editions/current"
+        "/editions/current",
+        "/speakers",
+        "/speakers/<speaker_id>",
+        "/speakers/<speaker_id>/talks"
       ]
     end
 
@@ -61,6 +64,23 @@ module OpenCode
       @talk = Talk.find(params[:id])
       bail "Unknown talk" unless @talk and @talk.edition_id == params[:edition_id].to_i
       json @talk.as_json
+    end
+
+    get "/speakers" do
+      @speakers = Speaker.all
+      json @speakers.map(&:as_json)
+    end
+
+    get "/speakers/:id" do
+      @speaker = Speaker.find_by_attribute(:screenname, params[:id])
+      bail "Unknown speaker" unless @speaker
+      json @speaker.as_json
+    end
+
+    get "/speakers/:id/talks" do
+      @speaker = Speaker.find_by_attribute(:screenname, params[:id])
+      bail "Unknown speaker" unless @speaker
+      json @speaker.talks.map(&:as_json)
     end
   end
 end

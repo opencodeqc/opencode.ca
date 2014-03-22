@@ -42,9 +42,9 @@
                         - talk.authors.each do |author|
                           %img{ :class => 'duo', :src => author.author_picture_url, :width => "30", :height => "30" }
                       - else
-                        %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
+                        %img{ :src => talk.author.picture_url, :width => "36", :height => "36" }
                       %span
-                        %em= talk.author_name
+                        %em= talk.author.name
                         %strong= talk.title
                 - if @future_edition.incomplete
                   %li.missing-talks
@@ -89,25 +89,25 @@
                   - if edition.talks.any?
                     - edition.talks.each do |talk|
                       %li
-                        - if talk.author_url
-                          %a{ :href => talk.author_url }
-                            %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
+                        - if talk.author && talk.author.url
+                          %a{ :href => talk.author.url }
+                            %img{ :src => talk.author.picture_url, :width => "36", :height => "36" }
                         - else
                           - if talk.authors.any?
                             - talk.authors.each do |author|
-                              %img{ :class => 'duo', :src => author.author_picture_url, :width => "24", :height => "24" }
+                              %img{ :class => 'duo', :src => author.picture_url, :width => "24", :height => "24" }
                           - else
-                            %img{ :src => talk.author_picture_url, :width => "36", :height => "36" }
+                            %img{ :src => talk.author.picture_url, :width => "36", :height => "36" }
                         %span.talk-infos
                           %strong
-                            - if talk.author_url
-                              %a{ :href => talk.author_url }= talk.author_name
+                            - if talk.author && talk.author.url
+                              %a{ :href => talk.author.url }= talk.author.name
                             - else
                               - if talk.authors.any?
                                 - talk.authors.each do |author|
-                                  %a{ :class => 'duo', :href => author.author_url }= author.author_name
+                                  %a{ :class => 'duo', :href => author.url }= author.name
                               - else
-                                = talk.author_name
+                                = talk.author.name
                             - if talk.slides_url
                               %a.url{ :href => talk.slides_url, :title => "Présentation" } slides
                             - if talk.code_url

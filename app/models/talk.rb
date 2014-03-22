@@ -1,32 +1,22 @@
 class Talk < YamlRecord::Base
-  include Sprockets::Helpers # OMG, this is unnacceptable
-
   # Source
   source File.expand_path('../../../data/talks',  __FILE__)
 
   # Properties
-  properties :title, :author_name, :author_screenname, :slides_url, :code_url, :edition_id, :authors
+  properties :title, :slides_url, :code_url, :edition_id, :author_id
 
-  # Return the author picture URL, if present
-  def author_picture_url
-    @author_picture_url ||= begin
-      if self.author_screenname
-        "http://twitter.com/api/users/profile_image/#{self.author_screenname}"
-      else
-        image_path("default-avatar.png")
-      end
-    end
+  # Find author
+  def author
+    Speaker.find(self[:author_id]) if self[:author_id].is_a?(Integer)
   end
 
-  # Return the author URL, if present
-  def author_url
-    @author_url ||= begin
-      "http://twitter.com/#{self.author_screenname}" if self.author_screenname
+  # Find authors in more than one
+  def authors
+    if self[:author_id].is_a?(Array)
+      self[:author_id].map { |id| Speaker.find(id) }
+    else
+      []
     end
-  end
-
-  def authors=(data)
-    self[:authors] = (data || []).map { |a| Talk.new(a) }
   end
 
   # Return the object as a Hash
