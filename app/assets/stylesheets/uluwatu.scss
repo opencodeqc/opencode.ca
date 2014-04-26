@@ -122,9 +122,11 @@ footer {
 
     a {
       display: inline-block;
-      @include gradient(#4a6ca2, #385d99);
-      border: 1px solid #37517b;
-      border-bottom-color: #2e456a;
+      //@include gradient(#4a6ca2, #385d99);
+      background: #222;
+      //border: 1px solid #37517b;
+      //border-bottom-color: #2e456a;
+      border: 1px solid rgba(#fff, 0.05);
       text-shadow: 0 -1px 0 #334c74;
       color: #fff;
       padding: 8px 13px;
@@ -200,6 +202,9 @@ footer {
 
         img {
           @include border-radius(3px);
+          -moz-filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 
           &.duo {
             position: relative;
