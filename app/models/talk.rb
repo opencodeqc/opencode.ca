@@ -21,6 +21,8 @@ class Talk < YamlRecord::Base
 
   # Return the object as a Hash
   def as_json
-    attributes
+    attributes.merge({
+      author_screenname: author.screenname
+    })
   end
 end
