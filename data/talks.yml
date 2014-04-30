@@ -282,6 +282,8 @@
 - :title: Parallélisme simple et élégant avec Erlang et Elixir
   :author_id: 43
   :edition_id: 20
+  :slides_url: https://speakerdeck.com/matehat/parallelisme-simple-et-elegant-avec-erlang-et-elixir
+  :code_url: https://github.com/matehat/opencode-elixir-crawlr
 - :title: <em>Something cool related to PHP</em>
   :author_id: 26
   :edition_id: 20
