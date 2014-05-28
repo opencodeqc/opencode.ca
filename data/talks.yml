@@ -291,7 +291,9 @@
 - :title: React.js (non, pas Riak!)
   :author_id: 14
   :edition_id: 20
-- :title: Inter-opérabilité des technologies
+- :title: Interopérabilité des technologies
+  :slides_url: http://prezi.com/dwoaa4jocsd9
+  :code_url: https://gist.github.com/gcauchon/5e3314d89a31a75d3af4
   :author_id: 10
   :edition_id: 21
 - :title: Meteor
