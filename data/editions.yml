@@ -89,3 +89,8 @@
   :held_at: 2014-05-27 18:00:00-0400
   :location: Abri.Co
   :id: 21
+- :title_fr: OpenCode XXII
+  :held_at: 2014-09-30 18:00:00-0400
+  :location: Abri.Co
+  :id: 22
+  :incomplete: true
