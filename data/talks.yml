@@ -306,9 +306,12 @@
   :author_id: 50
   :edition_id: 21
   :slides_url: https://drive.google.com/file/d/0B4S6ROD8n7dgZ1Q4bDcyQ0hRZVU
+- :title: Mutant et les tests de mutabilité
+  :author_id: 51
+  :edition_id: 22
 - :title: Phoenix
   :author_id: 3
   :edition_id: 22
-- :title: Mutant et les tests de mutabilité
-  :author_id: 51
+- :title: Modern and Open Source Web Mapping
+  :author_id: 52
   :edition_id: 22
