@@ -9,13 +9,7 @@ class Speaker < YamlRecord::Base
 
   # Return the author picture URL, if present
   def picture_url
-    @picture_url ||= begin
-      if self.screenname
-        "http://twitter.com/api/users/profile_image/#{self.screenname}"
-      else
-        image_path("default-avatar.png")
-      end
-    end
+    image_path("default-avatar.png")
   end
 
   # Return the author URL, if present
