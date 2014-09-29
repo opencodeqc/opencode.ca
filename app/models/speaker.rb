@@ -5,11 +5,15 @@ class Speaker < YamlRecord::Base
   source File.expand_path('../../../data/speakers',  __FILE__)
 
   # Properties
-  properties :name, :screenname
+  properties :name, :screenname, :avatar
 
   # Return the author picture URL, if present
   def picture_url
-    image_path("default-avatar.png")
+    if avatar
+      image_path("speakers/#{avatar}")
+    else
+      image_path("default-avatar.png")
+    end
   end
 
   # Return the author URL, if present
