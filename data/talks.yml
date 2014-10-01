@@ -312,6 +312,7 @@
 - :title: Métaprogrammation expressive en C++14
   :author_id: 29
   :edition_id: 22
+  :slides_url: http://ldionne.github.io/hana-opencode-xxii/
 - :title: Phoenix
   :author_id: 3
   :edition_id: 22
