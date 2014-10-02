@@ -309,6 +309,7 @@
 - :title: Mutant et les tests de mutabilité
   :author_id: 51
   :edition_id: 22
+  :slides_url: http://slides.com/jean-francoischaput/mutant
 - :title: Métaprogrammation expressive en C++14
   :author_id: 29
   :edition_id: 22
