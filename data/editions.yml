@@ -93,3 +93,8 @@
   :held_at: 2014-09-30 18:00:00-0400
   :location: Abri.Co
   :id: 22
+- :title_fr: OpenCode XXIII
+  :held_at: 2014-11-25 18:00:00-0500
+  :location: Abri.Co
+  :id: 23
+  :incomplete: true
