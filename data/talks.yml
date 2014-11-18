@@ -322,3 +322,12 @@
   :author_id: 52
   :edition_id: 22
   :slides_url: https://docs.google.com/presentation/d/1wHLc7PG3Me1KgSxDbr27vkBpDj3UQZavOiOhblkf5RY
+- :title: ember-cli
+  :author_id: 22
+  :edition_id: 23
+- :title: Managing user, role and permission with devise, cancancan and rolify
+  :author_id: 53
+  :edition_id: 23
+- :title: Modern team workflow
+  :author_id: 23
+  :edition_id: 23
