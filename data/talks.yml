@@ -325,9 +325,9 @@
 - :title: A CLI tool for creating ambitious web application
   :author_id: 22
   :edition_id: 23
-- :title: Users, roles and permissions with Devise, CanCanCan and Rolify
-  :author_id: 53
-  :edition_id: 23
 - :title: Modern team workflow
   :author_id: 23
+  :edition_id: 23
+- :title: Users, roles and permissions with Devise, CanCanCan and Rolify
+  :author_id: 53
   :edition_id: 23
