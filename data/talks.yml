@@ -336,6 +336,8 @@
   :author_id: 4
   :edition_id: 24
 - :title: Sucker Punch, Sidekiq et +
+  :slides_url: https://speakerdeck.com/jdurand/sucker-punch-sidekiq-etc
+  :code_url: https://github.com/jdurand/opencode-xxiv
   :author_id: 48
   :edition_id: 24
 - :title: Éditeurs de code pour navigateur Web
