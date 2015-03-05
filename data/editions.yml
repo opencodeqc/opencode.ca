@@ -102,3 +102,8 @@
   :held_at: 2015-01-27 18:00:00-0500
   :location: Abri.Co
   :id: 24
+- :title_fr: OpenCode XXV
+  :held_at: 2015-03-31 18:00:00-0400
+  :location: Abri.Co
+  :id: 25
+  :incomplete: true
