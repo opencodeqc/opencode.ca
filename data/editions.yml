@@ -1,5 +1,5 @@
 ---
-- :title_fr: Édition bêta
+- :title_fr: "Édition bêta"
   :held_at: 2011-07-28 19:00:00.000000000 -04:00
   :location: Mirego
   :id: 0
@@ -40,73 +40,77 @@
   :location: Abri.Co
   :id: 9
 - :title_fr: Dixième Édition
-  :held_at: 2013-03-26 18:00:00-0400
+  :held_at: 2013-03-26 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 10
 - :title_fr: Onzième Édition
-  :held_at: 2013-04-30 18:00:00-0400
+  :held_at: 2013-04-30 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 11
 - :title_fr: Douzième Édition
-  :held_at: 2013-05-28 18:00:00-0400
+  :held_at: 2013-05-28 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 12
 - :title_fr: OpenCode XIII
-  :held_at: 2013-06-25 18:00:00-0400
+  :held_at: 2013-06-25 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 13
 - :title_fr: OpenCode XIV
-  :held_at: 2013-07-30 18:00:00-0400
+  :held_at: 2013-07-30 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 14
 - :title_fr: OpenCode XV
-  :held_at: 2013-09-24 18:00:00-0400
+  :held_at: 2013-09-24 18:00:00.000000000 -04:00
   :location: Abri.Co
-  :id: 15
   :tips_and_tricks: true
+  :id: 15
 - :title_fr: OpenCode XVI
-  :held_at: 2013-10-29 18:00:00-0400
+  :held_at: 2013-10-29 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 16
 - :title_fr: OpenCode XVII
-  :held_at: 2013-11-26 18:00:00-0500
+  :held_at: 2013-11-26 18:00:00.000000000 -05:00
   :location: Abri.Co
   :id: 17
 - :title_fr: OpenCode XVIII
-  :held_at: 2014-01-28 18:00:00-0500
+  :held_at: 2014-01-28 18:00:00.000000000 -05:00
   :location: Abri.Co
   :id: 18
 - :title_fr: OpenCode XIX
-  :held_at: 2014-02-25 18:00:00-0500
+  :held_at: 2014-02-25 18:00:00.000000000 -05:00
   :location: Abri.Co
-  :id: 19
   :tips_and_tricks: true
+  :id: 19
 - :title_fr: OpenCode XX
-  :held_at: 2014-04-29 18:00:00-0400
+  :held_at: 2014-04-29 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 20
 - :title_fr: OpenCode XXI
-  :held_at: 2014-05-27 18:00:00-0400
+  :held_at: 2014-05-27 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 21
 - :title_fr: OpenCode XXII
-  :held_at: 2014-09-30 18:00:00-0400
+  :held_at: 2014-09-30 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 22
 - :title_fr: OpenCode XXIII
-  :held_at: 2014-11-25 18:00:00-0500
+  :held_at: 2014-11-25 18:00:00.000000000 -05:00
   :location: Abri.Co
-  :id: 23
   :tips_and_tricks: true
+  :id: 23
 - :title_fr: OpenCode XXIV
-  :held_at: 2015-01-27 18:00:00-0500
+  :held_at: 2015-01-27 18:00:00.000000000 -05:00
   :location: Abri.Co
   :id: 24
 - :title_fr: OpenCode XXV
-  :held_at: 2015-03-31 18:00:00-0400
+  :held_at: 2015-03-31 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 25
 - :title_fr: OpenCode XXVI
-  :held_at: 2015-09-29 18:00:00-0400
+  :held_at: 2015-09-29 18:00:00.000000000 -04:00
   :location: Abri.Co
   :id: 26
+- :title_fr: OpenCode XXVII
+  :held_at: 2015-11-24 18:00:00.000000000 -04:00
+  :location: Abri.Co
+  :id: 416b65dd0812eed5e71778cddb132b

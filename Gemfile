@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-ruby "2.1.5"
+ruby "2.1.7"
 
 # Server
 gem "unicorn"
