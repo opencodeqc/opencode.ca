@@ -1,5 +1,5 @@
 ---
-- :title: <em>HTTP Caching</em>
+- :title: "<em>HTTP Caching</em>"
   :slides_url: https://speakerdeck.com/rafbm/http-caching-basics
   :code_url: https://github.com/rafBM/opencode-httpcaching
   :edition_id: 8
@@ -14,7 +14,7 @@
 - :title: Node.js + Objective C
   :edition_id: 8
   :author_id: 4
-- :title: <em>Crash Course</em> sur les sockets
+- :title: "<em>Crash Course</em> sur les sockets"
   :slides_url: https://speakerdeck.com/jmlacroix/crash-course-sur-les-sockets
   :code_url: https://gist.github.com/3982311
   :edition_id: 7
@@ -24,22 +24,22 @@
   :code_url: https://github.com/antoineleclair/OpenCode20121030
   :edition_id: 7
   :author_id: 6
-- :title: <em>Design patterns</em> avancés avec Angular.js
+- :title: "<em>Design patterns</em> avancés avec Angular.js"
   :slides_url: http://trochette.github.com/Angular-Design-Patterns-Best-Practices
   :edition_id: 7
   :author_id: 46
-- :title: <em>Responsive AJAX</em>
+- :title: "<em>Responsive AJAX</em>"
   :slides_url: http://pothibo.github.com/open-code-ajax
   :code_url: https://github.com/pothibo/open-code-ajax
   :edition_id: 7
   :author_id: 7
-- :title: <em>Actor-based concurrency</em> et <em>multithreading</em> avec Celluloid
+- :title: "<em>Actor-based concurrency</em> et <em>multithreading</em> avec Celluloid"
   :edition_id: 6
   :author_id: 8
-- :title: <em>Computer Science 101</em> pour web geeks
+- :title: "<em>Computer Science 101</em> pour web geeks"
   :edition_id: 6
   :author_id: 9
-- :title: <em>Node.js realtime</em> avec Socket.IO
+- :title: "<em>Node.js realtime</em> avec Socket.IO"
   :slides_url: http://prezi.com/xw1f1sd_xvi4/opencode6-node-socketio-realtime
   :code_url: https://github.com/gcauchon/watcher
   :edition_id: 6
@@ -135,7 +135,7 @@
   :slides_url: https://github.com/sebhtml/opencode.ca/tree/master/9
   :edition_id: 9
   :author_id: 28
-- :title: <em>Concept based overloading</em> en C++
+- :title: "<em>Concept based overloading</em> en C++"
   :slides_url: https://docs.google.com/presentation/d/1HpjEz6dJauNoBxMGWzaNuOOoiVwqgISTNWNTwuOo-_8/edit#slide=id.gd8ce43ea_0146
   :code_url: https://github.com/ldionne/seminars/tree/master/opencode9_concept_overloading
   :edition_id: 9
@@ -157,7 +157,7 @@
   :slides_url: http://prezi.com/bsybznzolm7-/structures-de-donnees-pour-haute-performance
   :edition_id: 10
   :author_id: 32
-- :title: <code>tmux</code>, <code>teamocil</code> & <em>friends</em>
+- :title: "<code>tmux</code>, <code>teamocil</code> & <em>friends</em>"
   :slides_url: https://speakerdeck.com/remi/tmux-teamocil-and-friends
   :code_url: https://github.com/remiprev/tmuxfiles
   :edition_id: 10
@@ -203,14 +203,16 @@
   :author_id: 36
 - :title: How I met a developer on the other side of the world
   :edition_id: 13
-  :author_id: [37, 38]
-- :title: <em>Under Construction</em> a.k.a. Web Workers
+  :author_id:
+  - 37
+  - 38
+- :title: "<em>Under Construction</em> a.k.a. Web Workers"
   :edition_id: 14
   :author_id: 14
-- :title: <em>RubyGems</em> en 20 minutes
+- :title: "<em>RubyGems</em> en 20 minutes"
   :edition_id: 14
   :author_id: 2
-- :title: “<em>Use the source, dude.</em>”
+- :title: "“<em>Use the source, dude.</em>”"
   :edition_id: 14
   :author_id: 7
 - :title: CouchDB
@@ -263,11 +265,11 @@
   :code_url: https://github.com/matehat/reactive-ocn
   :edition_id: 18
   :author_id: 43
-- :title: <em>SSHez-vous?</em>
+- :title: "<em>SSHez-vous?</em>"
   :slides_url: https://gist.github.com/jbourassa/8772265
   :edition_id: 18
   :author_id: 44
-- :title: « Vide ta cache! »
+- :title: "« Vide ta cache! »"
   :edition_id: 19
   :author_id: 48
 - :title: Développement de systèmes parallèles
@@ -277,95 +279,99 @@
   :edition_id: 19
   :author_id: 45
 - :title: Garder son site Web heureux
-  :author_id: 12
-  :edition_id: 20
   :slides_url: https://docs.google.com/presentation/d/1fw5MHYFcju4FqE3SKtIgbOqwkRleeXpkhRStnpawoyQ/edit#slide=id.p
-- :title: Parallélisme simple et élégant avec Erlang et Elixir
-  :author_id: 43
   :edition_id: 20
+  :author_id: 12
+- :title: Parallélisme simple et élégant avec Erlang et Elixir
   :slides_url: https://speakerdeck.com/matehat/parallelisme-simple-et-elegant-avec-erlang-et-elixir
   :code_url: https://github.com/matehat/opencode-elixir-crawlr
-- :title: <em>Something cool related to PHP</em>
+  :edition_id: 20
+  :author_id: 43
+- :title: "<em>Something cool related to PHP</em>"
+  :edition_id: 20
   :author_id: 26
-  :edition_id: 20
 - :title: React.js (non, pas Riak!)
-  :author_id: 14
   :edition_id: 20
+  :author_id: 14
 - :title: Interopérabilité des technologies
   :slides_url: http://prezi.com/dwoaa4jocsd9
   :code_url: https://gist.github.com/gcauchon/5e3314d89a31a75d3af4
+  :edition_id: 21
   :author_id: 10
-  :edition_id: 21
 - :title: Meteor
+  :edition_id: 21
   :author_id: 49
-  :edition_id: 21
 - :title: ConTeXt
+  :edition_id: 21
   :author_id: 15
-  :edition_id: 21
 - :title: Envoyer du courriel en 2014 (sans tomber dans la boîte de « spam »)
-  :author_id: 50
-  :edition_id: 21
   :slides_url: https://drive.google.com/file/d/0B4S6ROD8n7dgZ1Q4bDcyQ0hRZVU
+  :edition_id: 21
+  :author_id: 50
 - :title: Mutant et les tests de mutabilité
-  :author_id: 51
-  :edition_id: 22
   :slides_url: http://slides.com/jean-francoischaput/mutant
+  :edition_id: 22
+  :author_id: 51
 - :title: Métaprogrammation expressive en C++14
-  :author_id: 29
-  :edition_id: 22
   :slides_url: http://ldionne.github.io/hana-opencode-xxii/
+  :edition_id: 22
+  :author_id: 29
 - :title: Phoenix
-  :author_id: 3
-  :edition_id: 22
   :slides_url: https://gist.github.com/simonprev/e32369440623fbe324ef
-- :title: Modern and Open Source Web Mapping
-  :author_id: 52
   :edition_id: 22
+  :author_id: 3
+- :title: Modern and Open Source Web Mapping
   :slides_url: https://docs.google.com/presentation/d/1wHLc7PG3Me1KgSxDbr27vkBpDj3UQZavOiOhblkf5RY
+  :edition_id: 22
+  :author_id: 52
 - :title: A CLI tool for creating ambitious web applications
-  :author_id: 22
-  :edition_id: 23
   :slides_url: https://speakerdeck.com/charlesdemers/a-cli-tool-for-creating-ambitious-web-applications
+  :edition_id: 23
+  :author_id: 22
 - :title: Modern team workflow
+  :edition_id: 23
   :author_id: 23
-  :edition_id: 23
 - :title: Users, roles and permissions with Devise, CanCanCan and Rolify
-  :author_id: 53
   :edition_id: 23
+  :author_id: 53
 - :title: Go et les patterns de concurrence
-  :author_id: 4
   :edition_id: 24
+  :author_id: 4
 - :title: Sucker Punch, Sidekiq et +
   :slides_url: https://speakerdeck.com/jdurand/sucker-punch-sidekiq-etc
   :code_url: https://github.com/jdurand/opencode-xxiv
+  :edition_id: 24
   :author_id: 48
+- :title: "Éditeurs de code pour navigateur Web"
   :edition_id: 24
-- :title: Éditeurs de code pour navigateur Web
   :author_id: 54
-  :edition_id: 24
 - :title: Développement WordPress avec Bedrock
   :slides_url: https://swipe.to/3090cf
+  :edition_id: 25
   :author_id: 33
-  :edition_id: 25
 - :title: Introduction à RX
+  :edition_id: 25
   :author_id: 55
-  :edition_id: 25
 - :title: Introduction à AWS Lambda
+  :edition_id: 25
   :author_id: 56
-  :edition_id: 25
 - :title: React + Flux
-  :author_id: 3
   :edition_id: 25
+  :author_id: 3
 - :title: Why you need Typescript to sleep better at night
-  :author_id: 57
-  :edition_id: 26
   :slides_url: https://docs.google.com/presentation/d/1L8vfVEQ7eNpLRVN_SlhkwhDQ0JXo-OFei133yfgjQwE
+  :edition_id: 26
+  :author_id: 57
 - :title: Killing it with Flexbox
+  :edition_id: 26
   :author_id: 23
-  :edition_id: 26
 - :title: Docker Compose
+  :edition_id: 26
   :author_id: 6
-  :edition_id: 26
 - :title: Docker meets a big-ass fish. Introducing Beluga
-  :author_id: 58
   :edition_id: 26
+  :author_id: 58
+- :title: Seamless migration from Ember to React
+  :edition_id: 416b65dd0812eed5e71778cddb132b
+  :author_id: 41
+  :id: 97e830953764fa51491df08216eef2
