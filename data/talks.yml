@@ -378,6 +378,7 @@
 - :title: Applications multi-plateformes avec Electron
   :author_id: 61
   :edition_id: 27
+  :slides_url: https://github.com/550/presentation-electron-opencode
 - :title: Living software in Clojure
   :author_id: 62
   :edition_id: 27
