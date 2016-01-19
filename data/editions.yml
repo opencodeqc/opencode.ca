@@ -114,3 +114,8 @@
   :held_at: 2015-11-24 18:00:00-0500
   :location: Abri.Co
   :id: 27
+- :title_fr: OpenCode XXVIII
+  :held_at: 2016-01-26 18:00:00-0500
+  :location: Abri.Co
+  :id: 28
+  :tips_and_tricks: true
