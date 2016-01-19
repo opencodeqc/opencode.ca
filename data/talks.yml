@@ -382,3 +382,12 @@
 - :title: Living software in Clojure
   :author_id: 62
   :edition_id: 27
+- :title: Bâtir un service distribué et tolérant aux pannes, à l’aide de riak_core et Elixir
+  :author_id: 43
+  :edition_id: 28
+- :title: AWS Lambda en production
+  :author_id: 63
+  :edition_id: 28
+- :title: Introduction à AWS Redshift
+  :author_id: 64
+  :edition_id: 28
