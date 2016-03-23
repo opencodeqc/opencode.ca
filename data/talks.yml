@@ -392,3 +392,12 @@
   :author_id: 64
   :edition_id: 28
   :slides_url: http://slides.com/guisim/deck
+- :title: React ♥ Redux
+  :author_id: 41
+  :edition_id: 29
+- :title: Introduction à AWS Kinesis
+  :author_id: 64
+  :edition_id: 29
+- :title: Un algorithme de comparaison de textes
+  :author_id: 28
+  :edition_id: 29
